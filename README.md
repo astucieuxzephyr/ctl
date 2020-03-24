@@ -2,8 +2,8 @@
  - Author : Tanguy Bodin-Hullin.
 
 # Changelog
- - Russian program (on Github) : avril 2013
- - Lase update : mars 24, 2020.
+ - Get original program (done by Daria Titova, in russian language) on Github : in avril 2013
+ - Last update : mars 24, 2020.
 
 # Description :
 
