@@ -10,8 +10,8 @@
 It is the color test by psychologist Max Lüscher (1923-2017), in an ultra-simplified version.
 The color test is used to assess a person's emotional state at a given time, based on their color preference at the time.
 This test is little known but is of good clinical interest, it is relevant and quite "powerful".
-It is a test that relies on the relationship between the perception of wavelengths of colors, and emotions. He is very scientific.
-It is not for nothing that expressions exist in the French language such as: "See the world in gray". Or: "See life in color"...
+It is a test that relies on the relationship between the perception of wavelengths of colors, and emotions. It is very scientific.
+It is not for nothing that some expressions exist in the French language like: "See the world in gray" ; or: "Voir la vie en rose"...
 
 # Principle of the test :
 Eight colors are presented to the subject taking the test.
@@ -20,23 +20,25 @@ The colors are: blue, green, red, yellow, purple, brown, black and gray.
 The subject chooses the colors one by one, according to their order of preference of the moment (and this is very important).
 The classification will allow a projection of certain components of the psychosomatic personality of the subject, at the time when he took the test.
 
+# Warning :
+Only a psychologist can provide a reliable analysis of your mental and emotional health. Every psychological test requires human validation, and its result can be legitimized by people close to you, who have coexistence and knowledge of your personality.
 
 # Personal interest, and history of this program :
 - I discovered the color test a long time ago, after finding an application on the Internet.
    I used the application several times and I was surprised by the relevance of the results.
 
-- The recovery of the Russian program was made in April 2013 on Github
- A first translation was made, and the JS program improved, but the file was lost.
+- The recovery of the Russian program was made in April 2013 on Github. A first translation has been made, and the JS program has been improved, but I lost the file by mistake some time later.
 
 - In March 2020, a new and improved version is put online.
    This version benefits from the following improvements:
-- Update of JQuery (from the)
+- Update of JQuery (from version 1.7.1 to version 3.4.1)
 - Better documented code
-- Texts in French made from Google Translator
-- Texts revised with Max Lüsher's book
+- Texts quickly translated into french with Google Translator.
 - Improved documentation in Markdown format.
 
-- TODO: A random color positioning system is planned.
+# Still To-do
+- Texts must be revised with help of the book about Max Lüsher's test.
+- Add a random color positioning system
 
 # Other interesting programs.
   - Several programs have been developed for the mobile phone (under Android)
@@ -59,6 +61,9 @@ His research has confirmed that using the right color on packaging can have a hy
 The Lüscher test exists in several forms:
 - complete test using a large color chart, available only in German,
 - simplified test using color cubes.
+
+### A powerful and fast-to-perform tool
+Among the deep tests in Psychology, the Lüscher Color Test is the fastest to perform and, despite its simplicity of application, it is a powerful tool for revealing physical and psychological stress sources, anxieties, repressed personality traits and so much more.
 
 ### Interpretation of the test :
 It is complex and documented on the [official website : Lüscher Color Diagnostik]
