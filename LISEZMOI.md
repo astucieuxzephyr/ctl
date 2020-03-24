@@ -2,7 +2,8 @@
 
  - Auteur : Tanguy Bodin-Hullin.
 # Changelog
- - récupération du programme russe (sur Github) : avril 2013
+ - Récupération sur Github du programme russe fait par Daria Titova : 23 avril 2013
+ - Nouvelle version du programme, en français, par Tanguy Bodin-Hullin
  - Dernière mise à jour : 24 mars 2020.
 
 # Description :
