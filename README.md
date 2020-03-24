@@ -77,8 +77,11 @@ Test results may vary depending on age.
 People who have energy, creativity, success would have this test at a very young age compared to their real age..
 
 # Liens :
- - [Max Lüscher sur Wikipédia](https://fr.wikipedia.org/wiki/Max_L%C3%BCscher)
- - [Site officiel Lüscher Color Diagnostik](https://www.luscher-color.ch/) : multilingual website on the Lüscher's system. A video of Max Lüscher is available, with many explanations.
- - [Site de conseil Auriol présentant le test](http://cabinet.auriol.free.fr/psychologie/luscher.htm)
-A link allow to download the old program of the Lüscher test (for Windows version < 10)
- -
+ - [Max Lüscher on Wikipédia (in english)](https://en.wikipedia.org/wiki/Max_L%C3%BCscher)
+ - [Max Lüscher on Wikipédia (in french)](https://fr.wikipedia.org/wiki/Max_L%C3%BCscher)
+ - [Lüscher Color Diagnostik (official website)](https://www.luscher-color.ch/) : multilingual website on the Lüscher's system. A video of Max Lüscher is available, with many explanations.
+ - [Auriol website présenting their usage of the test](http://cabinet.auriol.free.fr/psychologie/luscher.htm)
+On this website, you can [download the old program of the Lüscher test (for Windows version < 10)](http://cabinet.auriol.free.fr/psychologie/COLORTST.EXE)
+
+# References
+ - TODO
