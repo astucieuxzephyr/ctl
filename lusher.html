@@ -19,6 +19,7 @@
 <!--
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 -->
+<style></style>
   </head>
   <body>
     <div class="container">
@@ -59,8 +60,12 @@
     $(function(){
       // $(document).ready(function() { // ANCIEN CODE JQUERY
       var debug = true;
-      if (debug===true) console.log("Mode debug activé : traces affichées.")
-      var x = [];
+      if (debug===true) {
+        console.log("Mode debug activé : traces affichées.")
+      } else {
+        console.log("Mode debug inactif. Vous pouvez l'activer en mettant la variable debug à true.")
+      }
+      var tabChoices = [];
       var so = 0;
       var vk = 0;
       var numRx = /block(\d)/; // Expression régulière Regex (permet de récupérer le numéro du block)
@@ -99,32 +104,29 @@
     ];
     var instructionString = ["Cliquez sur la couleur que vous préférez le plus.","Parmi les couleurs restantes, laquelle aimez-vous le plus ?"];
     var itemNumber = 0;
-    $('.block').click(function() {
-        if (debug===true) console.log("block click");
-        console.log($(this)) // div.block3.block
+
+    $('.block').click(function(event) {
+        if (debug===true) console.log("block click",$(this));
         // trigger event : On cache le bloc qui a été cliqué
-        $(this).hide(function() {
-            console.log("hide")
-             // On ajoute au tableau x la valeur
-            // la classe est écrite comme suit : class="block1 block"
-            // On va récupérer le premier élément : ici "block1"
-            itemNumber = numRx.exec(
-               $(this).attr('class')
-            )[1];
-            if (debug===true) console.log(itemNumber)
-            // On ajoute l'élément au tableau x
-            x.push(parseInt(itemNumber),10);
-            if (debug===true) console.log("bloc caché : ")
-            if (debug===true) console.log("tableau x : ", x)
-            if (x.length == 1) {
-              $('p.instruction').remove();
-              $("div.instruction").append("<p class=\"instruction\">"+instructionString[1]+"</p>");
-            }
-            if (x.length == 8) {
-                // Après que le dernier élément ait été cliqué, on montre les résultats
-                showchoices();
-            }
-        });
+        event.preventDefault();
+        $( this ).hide();
+        // la classe est écrite comme suit : class="block1 block"
+        // On va récupérer le premier élément : ici "block1"
+        itemNumber = numRx.exec(
+           $(this).attr('class')
+        )[1];
+        // On ajoute l'élément au tableau des choix successifs
+        tabChoices.push(parseInt(itemNumber));
+        if (debug===true) console.log("Carte choisie (et cachée) : ", itemNumber)
+        if (debug===true) console.log("Choix successifs : ", tabChoices)
+        if (tabChoices.length == 1) {
+          $('p.instruction').remove();
+          $("div.instruction").append("<p class=\"instruction\">"+instructionString[1]+"</p>");
+        }
+        if (tabChoices.length == 8) {
+            // Après que le dernier élément ait été cliqué, on montre les résultats
+            showchoices();
+        }
     });
 
     // Appui sur le bouton "Recommencer"
@@ -146,10 +148,10 @@
         var vk_string = "Description";
         var i;
 
-        for (i = 0; i < x.length; i++) {
-            so += Math.abs(autnorma.indexOf(i) - x.indexOf(i));
+        for (i = 0; i < tabChoices.length; i++) {
+            so += Math.abs(autnorma.indexOf(i) - tabChoices.indexOf(i));
         }
-        vk = (18 - x.indexOf(3) - x.indexOf(4) - 2) / (18 - x.indexOf(1) - x.indexOf(2) - 2);
+        vk = (18 - tabChoices.indexOf(3) - tabChoices.indexOf(4) - 2) / (18 - tabChoices.indexOf(1) - tabChoices.indexOf(2) - 2);
         vk = Math.round(vk * 10) / 10;
 
         if (so <= 6) {
@@ -181,7 +183,7 @@
             vk_string = vk_interpretation[3];
         }
 
-        $("div.choices").append("<p class=\"choices\">Choix de couleur : " + x.join("-") + "</p>");
+        $("div.choices").append("<p class=\"choices\">Choix de couleur : " + tabChoices.join("-") + "</p>");
         $("div.choices").append("<p class=\"choices\">Écart total (СО): " + so + "</p>");
         $("div.choices").append("<p class=\"choices description\">   " + so_string + "</p>");
         $("div.choices").append("<p class=\"choices\">Coefficient végétatif (ВК): " + vk + "</p>");
