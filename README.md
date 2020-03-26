@@ -93,6 +93,8 @@ People who have energy, creativity, success would have this test at a very young
 ### in French :
 - Lüscher M., (1981). Le Color test de Max Lüscher. Votre personnalité révélée par les couleurs, Avignon, Aubanel, coll. Encycl. de sciences humaines et de psychologie pratique.
 - Lüscher M., (1992). Le nouveau test des couleurs. une méthode scientifique et facile, Paris, Solar.
+- [Canivet N. Le test de Lüscher](https://www.persee.fr/doc/clini_0373-6261_1964_num_17_1_1217). In: Bulletin de la Société française du Rorschach et des méthodes projectives, n°17-18, 1964. (pp. 57-61).
+- [Dounovetz A., Durand de Bousingen R. Utilisation en psychologie clinique du test de choix de couleurs (Luscher)](https://www.persee.fr/doc/clini_0373-6261_1969_num_23_1_1293). In: Bulletin de la Société française du Rorschach et des méthodes projectives, n°23, 1969. Psycholinguistique et techniques projectives. (pp. 95-98).
 ### in German :
 - Lüscher M., (1992). Die Lüscher-Würfel : zur Selbsterfahrung und Personlichkeitsbeurteilung.
 ### in English / Italian

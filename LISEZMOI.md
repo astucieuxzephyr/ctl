@@ -8,11 +8,11 @@
  - Dernière mise à jour : 24 mars 2020.
 
 ## Description :
-
-Il s'agit du test des couleurs du psychologue Max Lüscher (1923-2017), en version ultra simplifiée.
-Le test des couleurs permet d'évaluer l'état émotionnel d'une personne à un moment donné, en fonction de sa préférence de couleurs sur le moment.
-Ce test est peu connu mais est d'un bon intérêt clinique, il est pertinent et assez "puissant".
-C'est un test qui s'appuie sur la relation entre la perception des longueurs d'onde des couleurs, et les émotions. Il est très scientifique.
+CTL = Clinical Test
+- Il s'agit du test des couleurs du psychologue Max Lüscher (1923-2017), en version ultra-simplifiée.
+- Le test des couleurs permet d'évaluer l'état émotionnel d'une personne à un moment donné, en fonction de sa préférence de couleurs sur le moment.
+- Ce test est peu connu mais est d'un bon intérêt clinique, il est pertinent et assez "puissant".
+- C'est un test qui s'appuie sur la relation entre la perception des longueurs d'onde des couleurs, et les émotions. Il est très scientifique.
 Ce n'est pas pour rien qu'existent dans la langue française des expressions comme : "Voir le monde en gris". Ou encore : "Voir la vie en couleurs"...
 
 ## Passation du test :
@@ -112,7 +112,7 @@ Ce test est peu connu mais est d'un certain intérêt clinique. Il (Zirilli G. ,
 
 ### Variations des résultats selon l'âge :
 Les résultats du test peuvent varier en fonction de l'âge.
-Le [Site de conseil Auriol présentant le test](http://cabinet.auriol.free.fr/psychologie/luscher.htm) indique avoir créé un quotient couleurs qui permet d'évaluer une sorte d'âge émotionnel via le test de Lüscher.
+Le [site de Bernard Auriol](http://cabinet.auriol.free.fr/psychologie/luscher.htm) (médecin psychiatre et psychanalyste) qui présente le test indique qu'un quotient couleurs a été créé qui permet d'évaluer une sorte d'âge émotionnel via le test de Lüscher.
 > Les personnes qui ont de l'énergie, de la créativité, du succès auraient à ce test un âge très jeune par rapport à leur âge réel.
 
 ## Références bibliographiques
@@ -120,6 +120,8 @@ Le [Site de conseil Auriol présentant le test](http://cabinet.auriol.free.fr/ps
  - Lüscher M., (1981). Le Color test de Max Lüscher. Votre personnalité révélée par les couleurs, Avignon, Aubanel, coll. Encycl. de sciences humaines et de psychologie pratique.
  - Lüscher M., (1992). Le nouveau test des couleurs. une méthode scientifique et facile, Paris, Solar.
 (titre original) Die Lüscher-Würfel : zur Selbsterfahrung und Personlichkeitsbeurteilung. (traduction : pour la conscience de soi et l'évaluation de la personnalité).
+ - [Canivet N. Le test de Lüscher](https://www.persee.fr/doc/clini_0373-6261_1964_num_17_1_1217). In: Bulletin de la Société française du Rorschach et des méthodes projectives, n°17-18, 1964. (pp. 57-61).
+ - [Dounovetz A., Durand de Bousingen R. Utilisation en psychologie clinique du test de choix de couleurs (Luscher)](https://www.persee.fr/doc/clini_0373-6261_1969_num_23_1_1293). In: Bulletin de la Société française du Rorschach et des méthodes projectives, n°23, 1969. Psycholinguistique et techniques projectives. (pp. 95-98).
 
 ### English / Italian
 - Zirilli G., Applications of the colored "(Koch) tree (drawing) test" in psychiatry.
