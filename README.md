@@ -38,18 +38,13 @@ Some time later, in March 2008, when I was a psychology student at the Universit
 ## Warning :
 Only a psychologist can provide a reliable analysis of your mental and emotional health. Every psychological test requires human validation, and its result can be legitimized by people close to you, who have coexistence and knowledge of your personality.
 
-## Personal interest, and history of this program :
-- I discovered the color test a long time ago, after finding an application on the Internet.
-   I used the application several times and I was surprised by the relevance of the results.
-
+## History of this program :
 - The recovery of the Russian program was made in April 2013 on Github. A first translation has been made, and the JS program has been improved, but I lost the file by mistake some time later.
-
-- In March 2020, a new and improved version is put online.
-   This version benefits from the following improvements:
-- Update of JQuery (from version 1.7.1 to version 3.4.1)
-- Better documented code
-- Texts quickly translated into french with Google Translator.
-- Improved documentation in Markdown format.
+- In March 2020, a new and improved version is put online. This version benefits from the following improvements:
+  - Update of the JS code, based on JQuery (from version 1.7.1 to version 3.4.1)
+  - Texts translated into french
+  - Better documented code, added some debugging messages in the console that can be turned ON/OFF
+  - Improved documentation in Markdown format, in french and english.
 
 ## Still To-do
 - Add a random color positioning system
@@ -99,7 +94,14 @@ People who have energy, creativity, success would have this test at a very young
 - Lüscher M., (1981). Le Color test de Max Lüscher. Votre personnalité révélée par les couleurs, Avignon, Aubanel, coll. Encycl. de sciences humaines et de psychologie pratique.
 - Lüscher M., (1992). Le nouveau test des couleurs. une méthode scientifique et facile, Paris, Solar.
 ### in German :
-(titre original) Die Lüscher-Würfel : zur Selbsterfahrung und Personlichkeitsbeurteilung.
+- Lüscher M., (1992). Die Lüscher-Würfel : zur Selbsterfahrung und Personlichkeitsbeurteilung.
+### in English / Italian
+- Zirilli G., Applications of the colored "(Koch) tree (drawing) test" in psychiatry.
+### in Italian :
+- Zirilli G., Applications of the colored "tree test" in psychiatry.
+Translation in italian : Applicazioni del Koch "test ad albero" colorato in psichiatria
+Acta Neurol. (Napoli). 1967 Sep-Oct;22(5):619-43. Italian.
+No abstract available.
 
 ### Web links :
  - [Max Lüscher on Wikipédia (in french)](https://fr.wikipedia.org/wiki/Max_L%C3%BCscher)

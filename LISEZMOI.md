@@ -32,10 +32,10 @@ Le classement va permettre une projection de certaines composantes de la personn
 ## Historique de mon intérêt personnel pour ce programme :
 > J'ai découvert le test des couleurs au début des années 2000, après avoir trouvé, par hasard, une application sur Internet qui permettait de le passer.
 J'ai utilisé l'application à plusieurs reprises sur moi-même et j'ai été très surpris par l'extraordinaire pertinence des résultats. Je l'ai aussi fait passer à d'autres personnes, et cela m'a convaincu de la force du test et de sa validité.
-Ayant des difficultés psychologiques à l'époque, j'étais très intéressé pour me passer le test chaque jour pendant une période donnée. Le seul problème, c'est que le programme que j'avais récupéré (TESTCOUL.EXE) ne permettait pas d'enregistrer l'historique des passations, et de créer ainsi une base de données analysables. Etant formé en programmation de par mes premières études, j'ai donc décidé de créer un programme sous le logiciel Microsoft Access qui le permettait. J'ai bien avancé dans ce programme, et j'avais une interface graphique fonctionnelle qui permettait de faire le choix des couleurs.
-Mais je n'avais pas les phrases exactes qui sont données en résultats d'analyse, phrase très précises établies par Max Lüscher, et j'ai donc essayé de trouver un ouvrage sur le sujet.
+Ayant des difficultés psychologiques à l'époque, j'étais très intéressé pour me passer le test chaque jour pendant une période donnée. Le seul problème, c'est que le programme que j'avais récupéré (TESTCOUL.EXE) ne permettait pas d'enregistrer l'historique des passations, et de créer ainsi une base de données analysables. Etant formé en programmation de par mes premières études, j'ai donc décidé en 2007 de créer un programme sous le logiciel Microsoft Access qui le permettait. J'ai bien avancé dans ce programme, et j'avais une interface graphique fonctionnelle qui permettait de faire le choix des couleurs.
+Mais je n'avais pas les phrases exactes qui sont données en résultats d'analyse, phrases très précises établies par Max Lüscher, et après avoir recopié un certains nombre de phrases venant du logiciel initial TESTCOUL, j'ai essayé de trouver un ouvrage sur le sujet.
 J'ai trouvé à la bibliothèque de Nanterre un exemplaire du livre qui me permettrait d'en savoir plus, et j'en ai photocopié des parties qui me paraissaient les plus essentielles, mais j'avais d'autres chose à faire et j'ai mis le programme en standby.
-Quelque temps plus tard, en mars 2008, alors que j'étais étudiant en psychologie à l'Université de Paris Descartes, j'ai constaté sur le catalogue qu'il existait un autre ouvrage sur le test des couleurs, plus récent que celui que j'avais photocopié à Nanterre. Mais l'ouvrage était à la bibliothèque de l'Université de Toulouse. Heureusement, il existe un service de Prêt Entre Bibliothèques (PEB) qui m'a permis de commander l'ouvrage et de le consulter à Paris. Là encore, j'ai photocopié l'ouvrage, parce que je ne pouvais le garder longtemps comme je le souhaitais.
+Début 2008, j'ai à nouveau avancé sur le programme Access. En mars 2008, j'étais étudiant en psychologie à l'Université de Paris Descartes, et j'étais souvent à la bibliothèque pour travailler. J'ai constaté sur le catalogue de la bibliothèque qu'il existait un autre ouvrage sur le test des couleurs, plus récent que celui que j'avais photocopié à Nanterre. Mais l'ouvrage était à la bibliothèque de l'Université de Toulouse. Heureusement, il existe un service de Prêt Entre Bibliothèques (PEB) qui m'a permis de commander l'ouvrage et de le consulter à Paris. Là encore, j'ai photocopié l'ouvrage, parce que je ne pouvais le garder longtemps comme je le souhaitais.
 >
 > -- <cite>Tanguy Bodin-Hullin, psychologue clinicien, mars 2020</cite>
 
@@ -85,17 +85,18 @@ Dans le test de Lüscher, selon que l'on accepte ou que l'on rejette une couleur
 ### Marketing
 Les recherches de Lüscher ont confirmé que l'utilisation de la juste couleur sur les emballages peut avoir un effet hypnotique sur l'acheteur. De même la coloration des objets peut influer sur leur succès commercial (par exemple la coccinelle de Volkswagen lui devrait une part de sa réussite).
 
-### Test des couleurs de Lüscher
+## Test des couleurs de Lüscher
 
-# Formes du test
+### Formes du test
 Le test de Lüscher existe sous plusieurs formes :
 - test complet utilisant un vaste nuancier, disponible seulement en allemand,
 - test simplifié utilisant des cubes de couleurs.
 Le programme correspond à ce test, mais il délivre peu de résultats et propose seulement une analyse très simplifiée.
 
-## A propos du test simplifié :
+### A propos du test simplifié :
 
-## A propos du test complet :
+
+### A propos du test complet :
 Le Test Complet de Lüscher révèle plus que les simples réactions d'un individu à sa situation et son comportement général ; il montre aussi comment son comportement est conditionné, ses réactions inconscientes dans le domaine des émotions, ses désirs, ses aspirations, les élans et les besoins du plus profond de son psychisme.
 Ces renseignements peuvent permettre au psychologue, au psychiatre et psychanalyste de faire non seulement un diagnostic complet et précis, mais aussi de voir plus facilement la meilleure thérapeutique à suivre. (SOURCE : 1986)
 
@@ -114,12 +115,21 @@ Les résultats du test peuvent varier en fonction de l'âge.
 Le [Site de conseil Auriol présentant le test](http://cabinet.auriol.free.fr/psychologie/luscher.htm) indique avoir créé un quotient couleurs qui permet d'évaluer une sorte d'âge émotionnel via le test de Lüscher.
 > Les personnes qui ont de l'énergie, de la créativité, du succès auraient à ce test un âge très jeune par rapport à leur âge réel.
 
-# Références bibliographiques
+## Références bibliographiques
+### Français
  - Lüscher M., (1981). Le Color test de Max Lüscher. Votre personnalité révélée par les couleurs, Avignon, Aubanel, coll. Encycl. de sciences humaines et de psychologie pratique.
  - Lüscher M., (1992). Le nouveau test des couleurs. une méthode scientifique et facile, Paris, Solar.
 (titre original) Die Lüscher-Würfel : zur Selbsterfahrung und Personlichkeitsbeurteilung. (traduction : pour la conscience de soi et l'évaluation de la personnalité).
 
-# Liens :
+### English / Italian
+- Zirilli G., Applications of the colored "(Koch) tree (drawing) test" in psychiatry.
+### in Italian :
+- Zirilli G., Applications of the colored "tree test" in psychiatry.
+Translation in italian : Applicazioni del Koch "test ad albero" colorato in psichiatria
+Acta Neurol. (Napoli). 1967 Sep-Oct;22(5):619-43. Italian.
+No abstract available.
+
+## Liens :
  - [Max Lüscher sur Wikipédia](https://fr.wikipedia.org/wiki/Max_L%C3%BCscher)
  - [Site officiel Lüscher Color Diagnostik](https://www.luscher-color.ch/) : site multilingue sur le système de Lüscher. Une vidéo de Max Lüscher est disponible, ainsi que de nombreuses explications.
  - [Site de conseil Auriol présentant le test](http://cabinet.auriol.free.fr/psychologie/luscher.htm)
