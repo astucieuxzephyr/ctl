@@ -93,13 +93,13 @@
     var autnorma = [3, 4, 2, 5, 1, 6, 0, 7];
     // pour info.
     var couleursJson = [
+      { "gris"   : "0" },
+      { "bleu"   : "1" },
+      { "vert"   : "2" },
       { "rouge"  : "3" },
       { "jaune"  : "4" },
-      { "vert"   : "2" },
       { "violet" : "5" },
-      { "bleu"   : "1" },
       { "marron" : "6" },
-      { "gris"   : "0" },
       { "noir"   : "7" },
     ];
     var instructionString = ["Cliquez sur la couleur que vous préférez le plus.","Parmi les couleurs restantes, laquelle aimez-vous le plus ?"];
@@ -117,7 +117,7 @@
         )[1];
         // On ajoute l'élément au tableau des choix successifs
         tabChoices.push(parseInt(itemNumber));
-        if (debug===true) console.log("Carte choisie (et cachée) : ", itemNumber)
+        // if (debug===true) console.log("Carte choisie (et cachée) : ", itemNumber)
         if (debug===true) console.log("Choix successifs : ", tabChoices)
         if (tabChoices.length == 1) {
           $('p.instruction').remove();
@@ -133,7 +133,7 @@
     $('#toggle1').click(function() {
         if (debug===true) console.log("#toggle1 click")
         $('.block').show(); // On montre tous les blocks
-        x = []; // on réinitialise le tableau
+        tabChoices = []; // on réinitialise le tableau des choix
         $('p.choices').remove(); // On enlève les résultats
         $('p.instruction').remove(); // On enlève les instructions
         $("div.instruction").append("<p class=\"instruction\">"+instructionString[0]+"</p>");
@@ -142,51 +142,72 @@
     // Fonction qui montre les choix
     function showchoices() {
         $('p.instruction').remove(); // on enlève le bloc d'instructions
-        so = 0;
-        vk = 0;
+        so = 0; // Ecart total
+        vk = 0; // Coefficient vegetatif
         var so_string = "Description";
         var vk_string = "Description";
+        var so_interval = "[]";
+        var vk_interval = "[]";
         var i;
 
+        // Parcours du tableau des choix
         for (i = 0; i < tabChoices.length; i++) {
+            // Pour chaque élément, on ajoute de façon cumulée à so la valeur absolue de la différence
+            // entre la norme et la valeur choisie
+            if (debug===true) console.log("" + [i] + " " + so + " + ABS(Norme(" + autnorma.indexOf(i) + ")-Choix(" + tabChoices.indexOf(i) + "))")
             so += Math.abs(autnorma.indexOf(i) - tabChoices.indexOf(i));
+
         }
+        if (debug===true) console.log("Ecart total = " + so)
+
+        /* Calcul du coefficient végétatif */
         vk = (18 - tabChoices.indexOf(3) - tabChoices.indexOf(4) - 2) / (18 - tabChoices.indexOf(1) - tabChoices.indexOf(2) - 2);
         vk = Math.round(vk * 10) / 10;
 
+        /* Sélection de l'interprétation pour l'écart global */
         if (so <= 6) {
             so_string = so_interpretation[0];
+            so_interval = "[0 <= so <= 6]";
         }
         else if (so <= 12) {
             so_string = so_interpretation[1];
+            so_interval = "[6 < so <= 12]";
         }
         else if (so <= 20) {
             so_string = so_interpretation[2];
+            so_interval = "[12 < so <= 20]";
         }
         else if (so <= 26) {
             so_string = so_interpretation[3];
+            so_interval = "[20 < so <= 26]";
         }
         else if (so <= 32) {
             so_string = so_interpretation[4];
+            so_interval = "[26 < so <= 32]";
         }
 
+        // Sélection de l'interpretation pour le coefficient végétatif
         if (vk <= 0.4) {
             vk_string = vk_interpretation[0];
+            vk_interval = "[0 <=  vk <= 0,4]";
         }
         else if (vk <= 0.8) {
             vk_string = vk_interpretation[1];
+            vk_interval = "[0,4 < vk <= 0,8]";
         }
         else if (vk <= 1.9) {
             vk_string = vk_interpretation[2];
+            vk_interval = "[0,8 < vk <= 1,9]";
         }
         else if (vk <= 5) {
             vk_string = vk_interpretation[3];
+            vk_interval = "[1,9 < vk <= 5]";
         }
 
         $("div.choices").append("<p class=\"choices\">Choix de couleur : " + tabChoices.join("-") + "</p>");
-        $("div.choices").append("<p class=\"choices\">Écart total (СО): " + so + "</p>");
+        $("div.choices").append("<p class=\"choices\">Écart total (СО): " + so + " avec " + so_interval + "</p>");
         $("div.choices").append("<p class=\"choices description\">   " + so_string + "</p>");
-        $("div.choices").append("<p class=\"choices\">Coefficient végétatif (ВК): " + vk + "</p>");
+        $("div.choices").append("<p class=\"choices\">Coefficient végétatif (ВК): " + vk + " avec " + vk_interval +"</p>");
         $("div.choices").append("<p class=\"choices description\">   " + vk_string + "</p>");
       }
 
