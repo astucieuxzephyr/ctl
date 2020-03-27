@@ -70,24 +70,24 @@
       var vk = 0;
       var numRx = /block(\d)/; // Expression régulière Regex (permet de récupérer le numéro du block)
       var so_interpretation = [
-        "Absence de tension neuropsychique improductive. Le sujet testé est actif, ses actions sont diverses et son efficacité est élevée. L'attitude émotionnelle est optimiste. Une maîtrise de soi volontaire est développée. En même temps, la volonté n'est pas un instrument de suppression d'aucune partie de la personnalité; elle harmonise seulement les désirs divers, mais non contradictoires, du sujet. Avec la motivation appropriée, le sujet est capable de travailler intensivement pendant longtemps. Dans les situations extrêmes, il se mobilise efficacement et se concentre sur la tâche ",
+        "Absence de tension neuropsychique improductive. Le sujet testé est actif, ses actions sont diverses et son efficacité est élevée. L'attitude émotionnelle est optimiste. Une maîtrise de soi volontaire est développée. En même temps, la volonté n'est pas un instrument de suppression d'aucune partie de la personnalité; elle harmonise seulement les désirs divers, mais non contradictoires, du sujet. Avec la motivation appropriée, le sujet est capable de travailler intensivement pendant longtemps. Dans les situations extrêmes, il se mobilise efficacement et se concentre sur la tâche.",
 
-        " Un niveau insignifiant de tension neuropsychique improductive. Le sujet est dominé par l'attitude envers l'activité active. Ses ressources énergétiques sont suffisantes pour des explosions plus ou moins régulières de suractivité et de tension, inaccessibles à la plupart des autres. Dans les conditions d'une activité motivée (intéressante), elle ne rencontre pas de difficultés de stockage et de reproduction opérationnelle et à long terme des informations. En général, il ne recherche pas de sensations fortes. Il sort des situations stressantes avec dignité. ",
+        "Niveau insignifiant de tension neuropsychique improductive. Le sujet est dominé par une attitude orientée vers l'activité. Ses ressources énergétiques sont suffisantes pour des accès plus ou moins régulières de suractivité et de tension, inaccessibles à la plupart des autres. Dans les conditions d'une activité motivée (intéressante), il ne rencontre pas de difficultés au stockage et à la reproduction opérationnels des informations à long terme. En général, il ne recherche pas de sensations fortes. Il sort des situations stressantes avec dignité.",
 
-        " Le niveau moyen de tension neuropsychique improductive. Le sujet fait face à ses fonctions dans les conditions moyennes en vigueur. Dans l'environnement habituel, il passe du travail aux loisirs et retour, d'un type d'activité à l'autre sans difficultés importantes. Si nécessaire, il est capable de surmonter la fatigue par un effort volontaire, mais après cela, un long «train» de capacité de travail réduite se voit dans ses affaires et son bien-être. Pour maintenir la santé et la performance, le sujet nécessite une séparation relativement claire et subjective du temps de travail et de repos. ",
+        "Niveau moyen de tension neuropsychique improductive. Le sujet fait face à ses fonctions dans les conditions moyennes en vigueur. Dans l'environnement habituel, il passe du travail aux loisirs et retour, d'un type d'activité à l'autre sans difficultés importantes. Si nécessaire, il est capable de surmonter la fatigue par un effort volontaire, mais après cela, un long «train» de capacité de travail réduite se voit dans ses affaires et son bien-être. Pour maintenir la santé et la performance, le sujet nécessite une séparation relativement claire et subjective du temps de travail et de repos. ",
 
-        " Un niveau accru de tension neuropsychique improductive. Le potentiel de l'activité utile du sujet est très faible. Pour cette raison, il est obligé de se forcer à faire certaines choses irremplaçables. La commande voluelle à action constante renforce la fatigue. Un travail long et intensif est susceptible d'être coûteux pour le sujet au sens neuropsychique. De plus, il sera très inégal en termes de productivité et de qualité à différentes périodes de temps Le contexte émotionnel général se caractérise par une excitabilité, une anxiété et une incertitude accrues. Dans une situation stressante, une rupture d'activité et de comportement est probable. ",
+        "Niveau accru de tension neuropsychique improductive. Le potentiel de l'activité utile du sujet est très faible. Pour cette raison, il est obligé de se forcer à faire certaines choses irremplaçables. La commande voluelle à action constante renforce la fatigue. Un travail long et intensif est susceptible d'être coûteux pour le sujet au sens neuropsychique. De plus, il sera très inégal en termes de productivité et de qualité à différentes périodes de temps Le contexte émotionnel général se caractérise par une excitabilité, une anxiété et une incertitude accrues. Dans une situation stressante, une rupture d'activité et de comportement est probable. ",
 
-        " Tension neuropsychique improductive sévère. Le sujet est extrêmement fatigué. Son attention est facilement distraite par des choses étrangères, tout en étant caractéristique de «rester coincé» dans des expériences émotionnelles. L'absence d'une hiérarchie stable des motifs rend le sujet réactif et flou. L'humeur dans les plus brefs délais peut osciller entre exaltation et dépression, excitation et impuissance. Dans un état émotionnel, l'anxiété, la prémonition de troubles, l'impuissance et le manque de désir de faire quoi que ce soit prévalent. Dans une situation extrême, le sujet n'est pas fiable."
+        "Tension neuropsychique improductive sévère. Le sujet est extrêmement fatigué. Son attention est facilement distraite par des choses étrangères, tout en étant caractéristique de «rester coincé» dans des expériences émotionnelles. L'absence d'une hiérarchie stable des motifs rend le sujet réactif et flou. L'humeur dans les plus brefs délais peut osciller entre exaltation et dépression, excitation et impuissance. Dans un état émotionnel, l'anxiété, la prémonition de troubles, l'impuissance et le manque de désir de faire quoi que ce soit prévalent. Dans une situation extrême, le sujet n'est pas fiable."
       ];
 
-      var vk_interpretation = ["Épuisement, installation dans l'inaction. Surmenage chronique. Une réponse passive aux difficultés, un manque de préparation au stress et une action adéquate dans des situations stressantes sont caractéristiques. Des mesures de restauration diversifiées et volumineuses sont nécessaires. ",
+      var vk_interpretation = ["Épuisement, installation dans l'inaction. Surmenage chronique. Une réponse passive aux difficultés, un manque de préparation au stress et une action adéquate dans des situations stressantes sont caractéristiques. Des mesures de restauration diversifiées et volumineuses sont nécessaires.",
 
-      " Installation pour optimiser la dépense des forces. Besoin modéré de récupération et de repos. Le potentiel énergétique est faible, mais tout à fait suffisant pour une activité réussie dans les conditions calmes habituelles. Dans une situation extrême, un retard d'orientation et de prise de décision est probable. ",
+      "Installation pour optimiser la dépense des forces. Besoin modéré de récupération et de repos. Le potentiel énergétique est faible, mais tout-à-fait suffisant pour une activité réussie dans les conditions de calme habituelles. Dans une situation extrême, un retard d'orientation et de prise de décision est probable.",
 
-      " Mobilisation optimale des ressources physiques et mentales, mise en action active. Dans une situation extrême, la vitesse d'orientation et de prise de décision la plus probable, la faisabilité et le succès des actions. ",
+      "Mobilisation optimale des ressources physiques et mentales, mise en action active. Dans une situation extrême, la rapidité à s'orienter et une bonne probabilité de prise de décision, la faisabilité et le succès des actions. ",
 
-      " Excitation excessive, débrouillardise. Le niveau d'excitation est excessivement élevé. Il y a des cas fréquents où le sujet fait quelque chose non pas pour le bien lui-même, mais uniquement pour se décharger. Dans les situations difficiles, des réactions fébriles se forment facilement: impulsivité, impatience, diminution de la maîtrise de soi, éruptions cutanées. Dans les situations extrêmes, la plus faible efficacité des actions, les réactions de panique. Divers traitements relaxants et apaisants sont nécessaires."
+      "Excitation excessive, débrouillardise. Le niveau d'excitation est excessivement élevé. Il y a des cas fréquents où le sujet fait quelque chose non pas pour son propre bien, mais uniquement pour se décharger. Dans les situations difficiles, des réactions fébriles se forment facilement : impulsivité, impatience, diminution de la maîtrise de soi, éruptions cutanées. Dans les situations extrêmes, l'action est devenue quasiment inefficace, les réactions de panique dominent. Des traitements relaxants et apaisants sont nécessaires."
     ];
     //rouge (3), jaune (4), vert (2), violet (5), bleu (1), marron (6), gris (0), noir (7)
     var autnorma = [3, 4, 2, 5, 1, 6, 0, 7];
@@ -143,11 +143,11 @@
     function showchoices() {
         $('p.instruction').remove(); // on enlève le bloc d'instructions
         so = 0; // Ecart total
-        vk = 0; // Coefficient vegetatif
+        vk = 0; // Coefficient d'activité psycho-végétative
         var so_string = "Description";
         var vk_string = "Description";
-        var so_interval = "[]";
-        var vk_interval = "[]";
+        var so_interval = "[]"; // Précision sur l'intervalle d'appartenance de l'écart total.
+        var vk_interval = "[]"; // Précision sur l'intervalle d'appartenance du coefficient.
         var i;
 
         // Parcours du tableau des choix
@@ -158,7 +158,7 @@
             so += Math.abs(autnorma.indexOf(i) - tabChoices.indexOf(i));
 
         }
-        if (debug===true) console.log("Ecart total = " + so)
+        if (debug===true) console.log("Tension neuropsychique (Ecart total) : " + so)
 
         /* Calcul du coefficient végétatif */
         vk = (18 - tabChoices.indexOf(3) - tabChoices.indexOf(4) - 2) / (18 - tabChoices.indexOf(1) - tabChoices.indexOf(2) - 2);
@@ -186,7 +186,7 @@
             so_interval = "[26 < so <= 32]";
         }
 
-        // Sélection de l'interpretation pour le coefficient végétatif
+        // Sélection de l'interprétation pour le coefficient d'activité psycho-végétative
         if (vk <= 0.4) {
             vk_string = vk_interpretation[0];
             vk_interval = "[0 <=  vk <= 0,4]";
@@ -205,9 +205,9 @@
         }
 
         $("div.choices").append("<p class=\"choices\">Choix de couleur : " + tabChoices.join("-") + "</p>");
-        $("div.choices").append("<p class=\"choices\">Écart total (СО): " + so + " avec " + so_interval + "</p>");
+        $("div.choices").append("<p class=\"choices\">Tension neuropsychique (Ecart total) (SО): " + so + " avec " + so_interval + "</p>");
         $("div.choices").append("<p class=\"choices description\">   " + so_string + "</p>");
-        $("div.choices").append("<p class=\"choices\">Coefficient végétatif (ВК): " + vk + " avec " + vk_interval +"</p>");
+        $("div.choices").append("<p class=\"choices\">Coefficient végétatif (CК): " + vk + " avec " + vk_interval +"</p>");
         $("div.choices").append("<p class=\"choices description\">   " + vk_string + "</p>");
       }
 
