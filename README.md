@@ -1,16 +1,27 @@
 # French version of the Max Lüscher Test of colors :
  - Author : Tanguy Bodin-Hullin.
 
+ The psychophysiological states studied by 8 color variant of the Lüscher color test modified by L. Sobchik (method of paired comparisons)
+ Sobchik, L.N., 1990, Methods of psychological diagnostic (Л. Н. Собчик)
+
+
 ## Changelog
  - Get original program (done by Daria Titova, in russian language) on Github : in avril 23, 2013
  - New version of the program, in french, by Tanguy Bodin-Hullin
  - Last update : mars 25, 2020.
 
 ## Description :
-It is the color test by psychologist Max Lüscher (1923-2017), in an ultra-simplified version.
+It is the color test created by the swiss psychologist Max Lüscher (1923-2017), in an ultra-simplified version.
 The color test is used to assess a person's emotional state at a given time, based on their color preference at the time.
-This test is little known but is of good clinical interest, it is relevant and quite "powerful".
-It is a test that relies on the relationship between the perception of wavelengths of colors, and emotions. It is very scientific.
+This test is little known but is of high clinical interest, it is relevant and very scientific.
+It is a test that relies on the relationship between the perception of wavelengths of colors, and emotions.
+
+# Usage :
+The test was used many times, worldwide, and some medical researches have been conducted with it.
+Some psychologists still use the test, especially russian psychologists in the psychological support of athlets or highly skilled athlets.
+For example, the test can be used to measure the stress level of people.
+A french doctor is using it.
+
 It is not for nothing that some expressions exist in the French language like: "See the world in gray" ; or: "Voir la vie en rose"...
 
 ## Taking the test :
@@ -63,7 +74,19 @@ Only a psychologist can provide a reliable analysis of your mental and emotional
 ## About Max Lüscher :
 Max Lüscher is a Swiss psychologist and philosopher, professor of psychology.
 He is considered the father of color psychology.
-Read more about [Max Lüscher on Wikipédia](https://en.wikipedia.org/wiki/Max_L%C3%BCscher)
+- Read more about [Max Lüscher on Wikipédia](https://en.wikipedia.org/wiki/Max_L%C3%BCscher)
+
+### Colors
+Max Lüscher est un psychologue suisse qui a exploré l’hypothèse d’une
+correspondance entre les couleurs et les caractéristiques de la personnalité. Il postulait
+que l’attirance pour les couleurs étant fondée sur des processus inconscients, le test
+montrerait comment la personne est en réalité, par opposition à comment elle pourrait
+être, s’imaginer ou comment elle voudrait être. Nous nous sommes servie de son test
+pour évaluer l’état psycho-physiologique de la personne, sa capacité à gérer le stress,
+son activité et ses compétences de communication.
+Le test consiste à ordonner des cartons de couleur de la plus aimée à la moins
+aimée des couleurs. Il existe deux variantes de ce test, la complète et la courte. C’est la
+courte, proposant 8 couleurs, que nous avons utilisée
 
 ### Marketing :
 His research has confirmed that using the right color on packaging can have a hypnotic effect on the buyer. Likewise the coloring of objects can influence their commercial success (for example the Volkswagen Beetle should give him a share of his success).
@@ -99,6 +122,7 @@ People who have energy, creativity, success would have this test at a very young
 - Lüscher M., (1992). Die Lüscher-Würfel : zur Selbsterfahrung und Personlichkeitsbeurteilung.
 ### in English / Italian
 - Zirilli G., Applications of the colored "(Koch) tree (drawing) test" in psychiatry.
+- Sobchik, L.N., 1990, Methods of psychological diagnostic (Л. Н. Собчик)
 ### in Italian :
 - Zirilli G., Applications of the colored "tree test" in psychiatry.
 Translation in italian : Applicazioni del Koch "test ad albero" colorato in psichiatria

@@ -13,7 +13,12 @@ CTL = Clinical Test
 - Le test des couleurs permet d'évaluer l'état émotionnel d'une personne à un moment donné, en fonction de sa préférence de couleurs sur le moment.
 - Ce test est peu connu mais est d'un bon intérêt clinique, il est pertinent et assez "puissant".
 - C'est un test qui s'appuie sur la relation entre la perception des longueurs d'onde des couleurs, et les émotions. Il est très scientifique.
-Ce n'est pas pour rien qu'existent dans la langue française des expressions comme : "Voir le monde en gris". Ou encore : "Voir la vie en couleurs"...
+- Ce n'est pas pour rien qu'existent dans la langue française des expressions comme : "Voir le monde en gris". Ou encore : "Voir la vie en couleurs"...il y a un lien entre la perception des couleurs et la vie intérieure psychologique du sujet.
+
+# Usage :
+Le test a déjà été utilisé à de maintes reprises à travers le monde.
+Certains psychologues l'utilisent encore, notamment des psychologues russes dans le domaine du support psychologique des athlètes de haut niveau. Dans ce domaine, le test a été utilisé pour mesurer le niveau de stress des sportifs, ainsi que l'efficacité de leur autorégulation mentale.
+J'ai constaté qu'un médecin l'utilisait également en France.
 
 ## Passation du test :
 Huit couleurs sont présentées en même temps à la personne qui passe le test.
@@ -68,6 +73,14 @@ Début 2008, j'ai à nouveau avancé sur le programme Access. En mars 2008, j'é
 Max Lüscher est un psychologue et philosophe suisse, professeur de psychologie.
 Il est considéré comme le père de la psychologie des couleurs.
 
+Max Lüscher a exploré l’hypothèse d’une correspondance entre les couleurs et les caractéristiques de la personnalité. Il postulait que l’attirance pour les couleurs étant fondée sur des processus inconscients, le test montrerait comment la personne est en réalité, par opposition à comment elle pourrait être, s’imaginer ou comment elle voudrait être.
+
+Nous nous sommes servie de son test pour évaluer l’état psycho-physiologique de la personne, sa capacité à gérer le stress, son activité et ses compétences de communication.
+
+Le test consiste à ordonner des cartons de couleur de la plus aimée à la moins
+aimée des couleurs. Il existe deux variantes de ce test, la complète et la courte. C’est la
+courte, proposant 8 couleurs, que nous avons utilisée
+
 ## Extraits du livre de Max Lüscher "Le nouveau test des couleurs", 1992
 ### La perception des couleurs
 > La perception des couleurs est liée à la fois au cerveau formé (néo-cortex) et au cerveau primitif comme l'a prouvé Becker en 1953 en démontrant qu'un réseau de fibres nerveuses allait directement d'un nucleus de la rétine au cerveau moyen (mésencéphale) et à l'hypophyse.
@@ -82,6 +95,8 @@ Dans le test de Lüscher, selon que l'on accepte ou que l'on rejette une couleur
 >
 > -- <cite>("Le nouveau test des couleurs", 1992, p.257)</cite>
 
+
+
 ### Marketing
 Les recherches de Lüscher ont confirmé que l'utilisation de la juste couleur sur les emballages peut avoir un effet hypnotique sur l'acheteur. De même la coloration des objets peut influer sur leur succès commercial (par exemple la coccinelle de Volkswagen lui devrait une part de sa réussite).
 
@@ -90,11 +105,13 @@ Les recherches de Lüscher ont confirmé que l'utilisation de la juste couleur s
 ### Formes du test
 Le test de Lüscher existe sous plusieurs formes :
 - test complet utilisant un vaste nuancier, disponible seulement en allemand,
-- test simplifié utilisant des cubes de couleurs.
-Le programme correspond à ce test, mais il délivre peu de résultats et propose seulement une analyse très simplifiée.
+- test simplifié utilisant soit des cubes de couleurs, soit des cartes de couleurs.
+
+# Résultats délivrés par le programme
+Le programme utilise le test simplifié, mais il délivre
+peu de résultats et propose seulement une analyse très simplifiée.
 
 ### A propos du test simplifié :
-
 
 ### A propos du test complet :
 Le Test Complet de Lüscher révèle plus que les simples réactions d'un individu à sa situation et son comportement général ; il montre aussi comment son comportement est conditionné, ses réactions inconscientes dans le domaine des émotions, ses désirs, ses aspirations, les élans et les besoins du plus profond de son psychisme.
