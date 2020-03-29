@@ -95,8 +95,6 @@ Dans le test de Lüscher, selon que l'on accepte ou que l'on rejette une couleur
 >
 > -- <cite>("Le nouveau test des couleurs", 1992, p.257)</cite>
 
-
-
 ### Marketing
 Les recherches de Lüscher ont confirmé que l'utilisation de la juste couleur sur les emballages peut avoir un effet hypnotique sur l'acheteur. De même la coloration des objets peut influer sur leur succès commercial (par exemple la coccinelle de Volkswagen lui devrait une part de sa réussite).
 
@@ -104,14 +102,15 @@ Les recherches de Lüscher ont confirmé que l'utilisation de la juste couleur s
 
 ### Formes du test
 Le test de Lüscher existe sous plusieurs formes :
-- test complet utilisant un vaste nuancier, disponible seulement en allemand,
-- test simplifié utilisant soit des cubes de couleurs, soit des cartes de couleurs.
+- test complet utilisant un vaste nuancier de couleurs, disponible seulement en allemand,
+- test simplifié utilisant des cubes cartonnés de six (6) couleurs différentes
+- une version logicielle du test, qui présente huit cartes de couleur, et qui donne une analyse poussée de l'état psychologique d'un sujet.
+- le programme d'origine russe qui est proposé sur ce repository GitHub est similaire à la version logicielle, puisqu'il présente les 8 cartes de couleur, mais il délivre une information nettement plus succincte et simplifiée. Voir le détail au paragraphe "Résultats délivrés par le programme"
 
 # Résultats délivrés par le programme
-Le programme utilise le test simplifié, mais il délivre
-peu de résultats et propose seulement une analyse très simplifiée.
-
-### A propos du test simplifié :
+Le programme utilise le test simplifié, mais il délivre seulement deux résultats.
+1. Une *analyse de l'écart*
+2. Le *coefficient végétatif*
 
 ### A propos du test complet :
 Le Test Complet de Lüscher révèle plus que les simples réactions d'un individu à sa situation et son comportement général ; il montre aussi comment son comportement est conditionné, ses réactions inconscientes dans le domaine des émotions, ses désirs, ses aspirations, les élans et les besoins du plus profond de son psychisme.

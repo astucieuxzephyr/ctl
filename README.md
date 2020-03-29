@@ -76,26 +76,28 @@ Max Lüscher is a Swiss psychologist and philosopher, professor of psychology.
 He is considered the father of color psychology.
 - Read more about [Max Lüscher on Wikipédia](https://en.wikipedia.org/wiki/Max_L%C3%BCscher)
 
-### Colors
-Max Lüscher est un psychologue suisse qui a exploré l’hypothèse d’une
-correspondance entre les couleurs et les caractéristiques de la personnalité. Il postulait
-que l’attirance pour les couleurs étant fondée sur des processus inconscients, le test
-montrerait comment la personne est en réalité, par opposition à comment elle pourrait
-être, s’imaginer ou comment elle voudrait être. Nous nous sommes servie de son test
-pour évaluer l’état psycho-physiologique de la personne, sa capacité à gérer le stress,
-son activité et ses compétences de communication.
-Le test consiste à ordonner des cartons de couleur de la plus aimée à la moins
-aimée des couleurs. Il existe deux variantes de ce test, la complète et la courte. C’est la
-courte, proposant 8 couleurs, que nous avons utilisée
+### A correspondance between colors and incouscious state of a person
+Max Lüscher has explored the hypothesis of a correspondence between colors and inconscious state of a personality.
+He was applying that the attraction for colors being based on unconscious processes, the test
+would show how the person is and feels in reality as opposed to how they could
+be, could imagine she is or even how she would like to be.
 
 ### Marketing :
 His research has confirmed that using the right color on packaging can have a hypnotic effect on the buyer. Likewise the coloring of objects can influence their commercial success (for example the Volkswagen Beetle should give him a share of his success).
 
 ## The Lüscher test
+The test consists of ordering colored boxes from the most loved to the least loved colors,
+in other words, in order of preference *of the moment*. This means that the test can give different results depending on the moment it was taken. For example, if a person takes the test on a certain day and time, and gets a certain result, she could get a different result if she takes the test some hours later, on the same day, and all the more as time passes.
+
+# Different forms of the test
 The Lüscher test exists in several forms:
-- the complete test using a large color chart, available only in German,
-- the simplified test using color cubes.
-The program corresponds to this test, but it delivers few results and only offers a very simplified analysis.
+- the complete test (full test) using a large color chart, available only in German,
+- a simplified test (short test) using six (6) colors cardboard cubes.
+- a programmatic, software version, presenting height (8) colors on "cards", and giving a deep analysis of the psychological state of the subject.
+- the program of Russian origin which is offered on this GitHub repository is similar to the software version, since it presents the 8 colored cards, but it delivers clearly more succinct and simplified information, and offers another analysis. (See the details in the paragraph "Results delivered by the program").
+
+# When is the colours test usefull ?
+The colours test is commonly used to assess the psycho-physiological state of the person, their ability to manage stress, his activity and his communication skills.
 
 ### A powerful and fast-to-perform tool
 Among the deep tests in Psychology, the Lüscher Color Test is the fastest to perform and, despite its simplicity of application, it is a powerful tool for revealing physical and psychological stress sources, anxieties, repressed personality traits and so much more.
@@ -103,7 +105,8 @@ Among the deep tests in Psychology, the Lüscher Color Test is the fastest to pe
 ### Interpretation of the test :
 It is complex and documented on the [official website : Lüscher Color Diagnostik]
 
-According to the [Auriol website présenting their usage of the test](http://cabinet.auriol.free.fr/psychologie/luscher.htm), a simple interpretation of this test consists in looking if a color is classified among the favorites (the first four) or the least liked (the last four).
+## Simple_interpretation :
+According to the [Auriol website presenting their usage of the test](http://cabinet.auriol.free.fr/psychologie/luscher.htm), a simple interpretation of this test consists in looking if a color is classified among the favorites (the first four) or the least liked (the last four).
 > This test is little known but is of some clinical interest. It (Zirilli G., 1967), is widely used by certain specialists in personnel recruitment.
 
 ### Nota :
