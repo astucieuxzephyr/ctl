@@ -1,28 +1,32 @@
 table { margin-bottom: 30px; }
-      .block {
-          width: 150px;
-          height: 200px;
-          padding: 5px;
-          float: left;
-          /* border-radius */
-          -webkit-border-radius: 5px;
-          -moz-border-radius: 5px;
-          border-radius: 5px;
-          /* box-shadow */
-          -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
-          -moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
-          box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
-         }
 
-      .block1 {  background: #00008b;  }
-      .block2 {  background: #228b22;  }
-      .block3 {  background: #ff4040;  }
-      .block4 {  background: #ffd700;  }
-      .block5 {  background: #8b668b;  }
-      .block6 {  background: #8b4513;  }
-      .block7 {  background: #1c1c1c;  }
-      .block0 {  background: #8b8878;  }
+.cardcoul{
+  /*width: 150px;*/
+  height: 200px;
+  padding: 5px;
+  /* border-radius */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /* box-shadow */
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+  -moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+  box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+}
 
-      /* .choices { } */
-      .description { font-style: italic; margin-bottom: 10px; margin-left: 20px; }
-.instruction { font-family: "Times New Roman"; font-style: italic; font-size: 120%; text-align: center; }
+.block1 {  background: #00008b;  }
+.block2 {  background: #228b22;  }
+.block3 {  background: #ff4040;  }
+.block4 {  background: #ffd700;  }
+.block5 {  background: #8b668b;  }
+.block6 {  background: #8b4513;  }
+.block7 {  background: #1c1c1c;  }
+.block0 {  background: #8b8878;  }
+
+/* .choices { } */
+.description { font-style: italic; margin-bottom: 10px; margin-left: 20px; }
+.instruction { font-family: "Times New Roman"; font-style: italic; font-size: 100%; text-align: center; }
+/* NUANCIER */
+.nuance { width:15px; height:15px; background-color:rgba(0, 123, 255, 0.26); border:1px solid black; }
+input#colors { background-color:rgba(0, 123, 255, 0.26); }
+input#idcolors { background-color:rgba(0, 123, 255, 0.26); }
