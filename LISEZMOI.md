@@ -3,12 +3,24 @@
  - Auteur : Tanguy Bodin-Hullin.
 
 ## Changelog
- - Récupération sur Github du programme russe fait par Daria Titova : 23 avril 2013
- - Nouvelle version du programme, en français, par Tanguy Bodin-Hullin
- - Dernière mise à jour : 24 mars 2020.
+ - Récupération sur Github du programme russe CTL (clinical test) fait par Daria Titova : 23 avril 2013
+ - Nouvelle version du programme, en français, par Tanguy Bodin-Hullin, en mars 2020
+
+## Historique de ce programme :
+ - Le programme russe a été récupéré en avril 2013 sur Github
+ Une première traduction a été faite, et le programme JS amélioré, mais le fichier a été perdu.
+ - En mars 2020, une nouvelle version, améliorée, est mise en ligne.
+ Cette version bénéficie des améliorations suivantes :
+ - Mise à jour de JQuery (de la version 1.7.1 à la version 3.4.1)
+ - Nouvelle interface, qui s'appuie sur le système de cartes de Bootstrap 4.1
+ - Code mieux documenté, avec la possibilité d'afficher les messages de debug dans la console.
+ - Textes soigneusement traduits en français
+ - Amélioration de la documentation au format Markdown.
+
+## To-Do :
+   - Ajouter la possibilité d'obtenir les résultats dans d'autres langues, notamment en anglais.
 
 ## Description :
-CTL = Clinical Test
 - Il s'agit du test des couleurs du psychologue Max Lüscher (1923-2017), en version ultra-simplifiée.
 - Le test des couleurs permet d'évaluer l'état émotionnel d'une personne à un moment donné, en fonction de sa préférence de couleurs sur le moment.
 - Ce test est peu connu mais est d'un bon intérêt clinique, il est pertinent et assez "puissant".
@@ -44,17 +56,7 @@ Début 2008, j'ai à nouveau avancé sur le programme Access. En mars 2008, j'é
 >
 > -- <cite>Tanguy Bodin-Hullin, psychologue clinicien, mars 2020</cite>
 
-## Historique de ce programme :
-  - Le programme russe a été récupéré en avril 2013 sur Github
-  Une première traduction a été faite, et le programme JS amélioré, mais le fichier a été perdu.
 
-  - En mars 2020, une nouvelle version, améliorée, est mise en ligne.
-  Cette version bénéficie des améliorations suivantes :
-  - Update de JQuery (de la )
-  - Code mieux documenté
-  - Textes en français réalisés à partir de Google Translator
-  - Textes revus avec le livre de Max Lüsher
-  - Amélioration de la documentation au format Markdown.
 
 ## Autres programmes intéressants.
   - Plusieurs programmes ont été développés pour le mobile (Android)
@@ -109,7 +111,7 @@ Le test de Lüscher existe sous plusieurs formes :
 
 # Résultats délivrés par le programme
 Le programme utilise le test simplifié, mais il délivre seulement deux résultats.
-1. Une *analyse de l'écart*
+1. La *tension neuropsychique*
 2. Le *coefficient végétatif*
 
 ### A propos du test complet :

@@ -6,9 +6,22 @@
 
 
 ## Changelog
- - Get original program (done by Daria Titova, in russian language) on Github : in avril 23, 2013
- - New version of the program, in french, by Tanguy Bodin-Hullin
- - Last update : mars 25, 2020.
+ - Get original CTL program (done by Daria Titova, in russian language) on Github : in avril 23, 2013
+ - New version of the program, in french, by Tanguy Bodin-Hullin, in march 2020.
+ - Last update : april 2020.
+
+## History of this program :
+ - The first recovery of the Russian program was made in April 2013 on Github. A first translation has been made, and the JS program has been improved, but I lost the file by mistake some time later.
+ - At the end of March 2020, a new and improved version is put online.
+ This version benefits from many improvements:
+   - Big Update of the JS code, based on JQuery (from version 1.7.1 to version 3.4.1)
+   - Brand new interface, based on Bootstrap 4.1.
+   - Texts translated into french
+   - Better documented code, added some debugging messages in the console that can be turned ON/OFF
+   - Improved documentation in Markdown format, in french and english.
+
+## Still To-do :
+  - Add the ability to get the results in other languages, especially in english.
 
 ## Description :
 It is the color test created by the swiss psychologist Max Lüscher (1923-2017), in an ultra-simplified version.
@@ -48,14 +61,6 @@ Some time later, in March 2008, when I was a psychology student at the Universit
 
 ## Warning :
 Only a psychologist can provide a reliable analysis of your mental and emotional health. Every psychological test requires human validation, and its result can be legitimized by people close to you, who have coexistence and knowledge of your personality.
-
-## History of this program :
-- The recovery of the Russian program was made in April 2013 on Github. A first translation has been made, and the JS program has been improved, but I lost the file by mistake some time later.
-- In March 2020, a new and improved version is put online. This version benefits from the following improvements:
-  - Update of the JS code, based on JQuery (from version 1.7.1 to version 3.4.1)
-  - Texts translated into french
-  - Better documented code, added some debugging messages in the console that can be turned ON/OFF
-  - Improved documentation in Markdown format, in french and english.
 
 ## Still To-do
 - Add a random color positioning system
