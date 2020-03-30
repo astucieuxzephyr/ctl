@@ -13,6 +13,10 @@
  Cette version bénéficie des améliorations suivantes :
  - Mise à jour de JQuery (de la version 1.7.1 à la version 3.4.1)
  - Nouvelle interface, qui s'appuie sur le système de cartes de Bootstrap 4.1
+ - Ajout de la possibilité de mettre facilement des noms par défaut dans le programme,
+ pour faciliter les passations.
+ - Interface de résultats lisible, et qui permet de récupérer plus facilement des données de passation
+ par copier-coller.
  - Code mieux documenté, avec la possibilité d'afficher les messages de debug dans la console.
  - Textes soigneusement traduits en français
  - Amélioration de la documentation au format Markdown.

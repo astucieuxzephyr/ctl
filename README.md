@@ -16,6 +16,8 @@
  This version benefits from many improvements:
    - Big Update of the JS code, based on JQuery (from version 1.7.1 to version 3.4.1)
    - Brand new interface, based on Bootstrap 4.1.
+   - Added ability to easily use names by default with a selector, to facilitate the usage.
+   - New results interface, that allows to easily get assessment data with a simple copy-paste.
    - Texts translated into french
    - Better documented code, added some debugging messages in the console that can be turned ON/OFF
    - Improved documentation in Markdown format, in french and english.
