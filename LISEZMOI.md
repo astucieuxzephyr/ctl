@@ -23,6 +23,7 @@
 
 ## To-Do :
    - Ajouter la possibilité d'obtenir les résultats dans d'autres langues, notamment en anglais.
+   - Ajouter un système de randomisation de la position des cartes de couleur.
 
 ## Description :
 - Il s'agit du test des couleurs du psychologue Max Lüscher (1923-2017), en version ultra-simplifiée.

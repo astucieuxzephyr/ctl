@@ -24,7 +24,8 @@
 
 ## Still To-do :
   - Add the ability to get the results in other languages, especially in english.
-
+  - Add a random color positioning system
+  
 ## Description :
 It is the color test created by the swiss psychologist Max Lüscher (1923-2017), in an ultra-simplified version.
 The color test is used to assess a person's emotional state at a given time, based on their color preference at the time.
@@ -63,9 +64,6 @@ Some time later, in March 2008, when I was a psychology student at the Universit
 
 ## Warning :
 Only a psychologist can provide a reliable analysis of your mental and emotional health. Every psychological test requires human validation, and its result can be legitimized by people close to you, who have coexistence and knowledge of your personality.
-
-## Still To-do
-- Add a random color positioning system
 
 ## Other interesting programs.
   - Several programs have been developed for the mobile phone (under Android)
