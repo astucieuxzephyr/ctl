@@ -1,4 +1,4 @@
-# French version of the Max Lüscher Test of colors :
+# Multilingual version of the Max Lüscher Test of colors :
  - Author : Tanguy Bodin-Hullin.
 
  The psychophysiological states studied by 8 color variant of the Lüscher color test modified by L. Sobchik (method of paired comparisons)
