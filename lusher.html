@@ -3,10 +3,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Test des couleurs de Lüsher - Version francaise</title>
+    <title>Test des couleurs de Lüsher - Max Lüscher's Colors Test</title>
     <meta name="author" content="Tanguy Bodin-Hullin">
     <meta name="translator" content="Tanguy Bodin-Hullin">
-    <meta name="last-update" content="24/03/2020">
+    <meta name="last-update" content="15/02/2025">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
@@ -24,7 +24,7 @@
 
 
 	<div class="choices cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <h3 class="cover-heading welcome">Test des couleurs de Max Lüscher</h3>
+    <h3 class="cover-heading welcome">Test des couleurs de Max Lüscher / Max Lüscher's Colors Test</h3>
     <!-- <h2 class="choices cover-heading">Résultats :</h2> -->
     <div class="row">
 
@@ -33,15 +33,26 @@
       <div class="card">
         <div class="card-body">
       <div class="form-group row">
-          <label for="NameSelect" class="col-sm-4">1) Indiquez votre prénom :</label>
-          <select id="NameSelect" class="form-control col-sm-7">
-            <option value="Anonyme" selected>Choisissez ici</option>
-            <option value="TBH">Tanguy</option>
-            <option value="AT">Anne</option>
-            <option value="Anonyme">...</option>
+          <label for="LanguageSelect" class="col-sm-4">1) Langue / Language :</label>
+          <select id="LanguageSelect" class="form-control col-sm-7">
+            <option value="FR+EN" selected>Français et Anglais</option>
+            <option value="FR">Français (french)</option>
+            <option value="EN">English (anglais)</option>
+            <option value="DE">Deutsch (german)</option>
+            <option value="ES">Español (spanish)</option>
           </select>
        </div>
-       <p class="instruction card-text">2) Cliquez sur la couleur que vous aimez le plus.</p>
+       <div class="form-group row">
+        <label for="NameSelect" class="col-sm-4">2) Indiquez votre prénom / Choose your surname :</label>
+        <select id="NameSelect" class="form-control col-sm-7">
+          <option value="Anonyme" selected>Choisissez ici/choose here</option>
+          <option value="TBH">Tanguy</option>
+          <option value="AT">Anne</option>
+          <option value="Anonyme">Anonyme</option>
+        </select>
+     </div>
+       <p class="instruction card-text">3) [Français] Cliquez sur la couleur que vous aimez le plus, une couleur après l'autre.</p>
+       <p class="instruction card-text">[English] Please click on the color you like the most, one color after another.</p>
      </div>
    </div>
   </div>
@@ -50,7 +61,7 @@
   <div id="synthese" class="col-sm-6">
     <div class="card choices">
       <div class="card-body">
-        <h5 class="card-title">Synthèse des résultats :</h5>
+        <h5 class="card-title">Synthèse des résultats - Summary of results :</h5>
         <!-- <p class="card-text">With supportional content.</p> -->
         <div class="row">
           <div id="name" class="col-sm-6"></div>
@@ -74,20 +85,20 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Choix de couleurs :</h5>
+        <h5 class="card-title">Choix de couleurs / Color's choice :</h5>
           <div class="form-group row">
             <div class="col-sm-6">
               <!-- <label for="colors" class="col-sm-12 col-form-label">Choix de couleurs :</label>-->
               <!-- nuancier de couleurs permettant de voir le résultat -->
                 <div id="nuancier" style="width:160px; height:23px; background-color:#eeeeee; border:1px solid blue;">
-                  <div id="col1" class="d-inline-block nuance" style=""></div>
-                  <div id="col2" class="d-inline-block nuance" style=""></div>
-                  <div id="col3" class="d-inline-block nuance" style=""></div>
-                  <div id="col4" class="d-inline-block nuance" style=""></div>
-                  <div id="col5" class="d-inline-block nuance" style=""></div>
-                  <div id="col6" class="d-inline-block nuance" style=""></div>
-                  <div id="col7" class="d-inline-block nuance" style=""></div>
-                  <div id="col8" class="d-inline-block nuance" style=""></div>
+                  <div id="col1" class="d-inline-block nuance"></div>
+                  <div id="col2" class="d-inline-block nuance"></div>
+                  <div id="col3" class="d-inline-block nuance"></div>
+                  <div id="col4" class="d-inline-block nuance"></div>
+                  <div id="col5" class="d-inline-block nuance"></div>
+                  <div id="col6" class="d-inline-block nuance"></div>
+                  <div id="col7" class="d-inline-block nuance"></div>
+                  <div id="col8" class="d-inline-block nuance"></div>
                 </div>
                 <input id="colors2" type="text" readonly class="form-control-plaintext form-control-sm" size="8" value="">
                 <!-- <input id="idcolors2" type="text" readonly class="form-control-plaintext form-control-sm" size="8" value=""> -->
@@ -103,12 +114,12 @@
 
 </div><!-- end row 1 -->
 
-<div class="row">
+<div class="row"><!-- begin row 2 -->
 <!-- ROW 2 : LEFT CARD -->
 <div class="col-sm-6">
   <div class="card choices">
     <div id="analyse-so" class="card-body">
-      <h5 class="card-title">Tension neuropsychique (Ecart total) :</h5>
+      <h5 class="card-title">Tension nerveuse/psychique (neuropsychic tension) :</h5>
       <!-- <p class="card-text">With supporting text.</p> -->
     </div>
   </div>
@@ -117,17 +128,39 @@
 <div class="col-sm-6">
   <div class="card choices">
     <div id="analyse-vk" class="card-body">
-      <h5 class="card-title">Coefficient d'activité psycho-végétative :</h5>
+      <h5 class="card-title">Coefficient d'activité psycho-végétative (Psycho-vegetative activity coefficient) :</h5>
       <!-- <p class="card-text">With supporting text.</p> -->
     </div>
   </div>
 </div>
 </div><!-- end row 2 -->
+
+<div class="row"><!-- begin row 3 -->
+  <!-- ROW 3 : LEFT CARD -->
+  <div class="col-sm-6">
+    <div class="card choices">
+      <div id="analyse-so-eng" class="card-body">
+        <h5 class="card-title">Neuropsychic tension :</h5>
+        <!-- <p class="card-text">With supporting text.</p> -->
+      </div>
+    </div>
+  </div>
+  <!-- ROW 3 : RIGHT CARD -->
+  <div class="col-sm-6">
+    <div class="card choices">
+      <div id="analyse-vk-eng" class="card-body">
+        <h5 class="card-title">Psycho-vegetative activity coefficient :</h5>
+        <!-- <p class="card-text">With supporting text.</p> -->
+      </div>
+    </div>
+  </div>
+  </div><!-- end row 3 -->
+
 </div><!-- end container -->
 
       <div class="" align="center">
            <div class="instruction row">
-              <p class="instruction col-sm-12">Cliquez sur la couleur que vous aimez le plus.</p>
+              <p class="instruction col-sm-12">Cliquez sur la couleur que vous aimez le plus. Click on the color you like the most</p>
            </div>
            <div class="ligneHaute row">
              <div class="col-sm-2"></div>
@@ -164,26 +197,98 @@
       var so = 0; // tension neuropsychique (écart total)
       var vk = 0; // coefficient végétatif
       var numRx = /block(\d)/; // Expression régulière Regex (permet de récupérer le numéro du block)
+      
+      // French Language
       var so_interpretation = [
-        "Absence de tension neuropsychique improductive. Le sujet testé est actif, ses actions sont diverses et son efficacité est élevée. L'attitude émotionnelle est optimiste. Une maîtrise de soi volontaire est développée. En même temps, la volonté n'est pas un instrument de suppression d'aucune partie de la personnalité; elle harmonise seulement les désirs divers, mais non contradictoires, du sujet. Avec la motivation appropriée, le sujet est capable de travailler intensivement pendant longtemps. Dans les situations extrêmes, il se mobilise efficacement et se concentre sur la tâche.",
+        "Absence de tension neuropsychique improductive.<br>Le sujet testé est actif, ses actions sont diversifiées et son efficacité est élevée.<br>L'humeur (attitude émotionnelle) est optimiste.<br>Le contrôle de la volonté est bon et développé. En même temps, la volonté n'est pas utilisée pour réprimer une partie de la personnalité ; elle ne fait que coordonner les désirs différents mais non contradictoires du sujet. <br>Si le sujet possède de la motivation pour ce qu'il fait, il est capable de travailler de façon intensive pendant une longue période. Dans les situations extrêmes, il se mobilise efficacement et se concentre sur la tâche à accomplir.",
 
-        "Niveau insignifiant de tension neuropsychique improductive. Le sujet est dominé par une attitude orientée vers l'activité. Ses ressources énergétiques sont suffisantes pour des accès plus ou moins régulières de suractivité et de tension, inaccessibles à la plupart des autres. Dans les conditions d'une activité motivée (intéressante), il ne rencontre pas de difficultés au stockage et à la reproduction opérationnels des informations à long terme. En général, il ne recherche pas de sensations fortes. Il sort des situations stressantes avec dignité.",
+        "Niveau insignifiant/faible de tension neuropsychique improductive.<br>Le sujet est majoritairement porté vers un niveau actif d'activité. Ses ressources énergétiques sont suffisantes pour des accès plus ou moins réguliers de suractivité et de tension qui sont inaccessibles à la plupart des autres personnes. <br>Dans les conditions d'une activité motivée (intéressante), il n'a pas de difficultés à mémoriser et à reproduire des informations de manière opérationnelle et à long terme. <br>De manière générale, il ne recherche pas les sensations fortes. Il se sort dignement des situations stressantes.",
 
-        "Le niveau de tension neuropsychique improductive est moyen. Dans des conditions moyennes, le sujet arrive à faire face à sa charge et à ses obligations. Dans un environnement habituel, il passe sans difficultés importantes du travail aux loisirs et vice-versa (ou d'un type d'activité à l'autre). Si nécessaire, il est capable de surmonter la fatigue par un effort volontaire, mais après cela, une longue période de capacité de travail réduite va apparaître dans ses actes et son bien-être. Pour maintenir sa santé et une bonne performance, il est nécessaire que le sujet sépare plus clairement et subjectivement ses temps de travail et de repos.",
+        "Niveau moyen de tension neuropsychique improductive.<br>Le sujet s'acquitte de ses tâches et arrive à faire face à sa charge et à ses obligations, mais dans les limites d'une exigence moyenne. Dans un environnement habituel, il passe sans difficultés significatives du travail aux loisirs et vice-versa (ou d'un type d'activité à l'autre). Si nécessaire, il est capable de surmonter la fatigue par un effort volontaire, mais après cela, une longue période de capacité de travail réduite va apparaître dans ses actes et son bien-être.<br>Afin de préserver sa santé et son efficacité, il est nécessaire que le sujet sépare plus clairement ses temps de travail et de repos, et ce de façon subjective et adaptée à lui-même.",
 
-        "Niveau accru de tension neuropsychique improductive. Le potentiel d'utilité dans l'activité du sujet est très faible. Pour cette raison, il est obligé de se forcer à faire certaines choses irremplaçables. Agir de façon constante sous le contrôle de sa volonté renforce sa fatigue. Un travail long et intensif sera certainement coûteux neuropsychiquement pour le sujet. De plus, sur la durée, le travail sera très inégal en termes de productivité et de qualité. Le contexte émotionnel général se caractérise par une excitabilité, une anxiété et une incertitude accrues. Dans une situation stressante, une rupture d'activité et de comportement est probable.",
+        "Niveau accru de tension neuropsychique improductive.<br>Le potentiel d'utilité dans l'activité du sujet est très faible. Pour cette raison, il est obligé de se contraindre pour faire des tâches nécessaires. Agir de façon constante sous le contrôle de sa volonté renforce sa fatigue. Un travail long et intensif risque d'être très coûteux neuropsychologiquement pour le sujet. De plus, sur la durée, son travail sera très inégal en termes de productivité et de qualité. <br>Le contexte émotionnel général est caractérisé par une excitabilité plus forte, avec une anxiété et une incertitude accrues. <br>Dans une situation stressante, une pertubation de l'activité et du comportement est probable.",
 
-        "Tension neuropsychique improductive sévère. Le sujet est extrêmement fatigué. Son attention est facilement distraite par des choses étrangères, tout en étant caractéristique de « rester coincé » dans des expériences émotionnelles. L'absence d'une hiérarchie stable des motifs rend le sujet réactif et flou. L'humeur dans les plus brefs délais peut osciller entre exaltation et dépression, excitation et impuissance. Dans un état émotionnel, l'anxiété, la prémonition de troubles, l'impuissance et le manque de désir de faire quoi que ce soit prévalent. Dans une situation extrême, le sujet n'est pas fiable."
+        "Niveau sévère de tension neuropsychique improductive.<br>Le sujet est extrêmement fatigué. Son attention est facilement détournée par des éléments extérieurs (distractivité), et il est typique pour lui de rester « bloqué » dans des expériences émotionnelles. L'absence d'une hiérarchie stable des motifs rend le sujet réactif et déconcentré. L’humeur peut fluctuer/osciller en très peu de temps entre l'exaltation et la dépression, l'excitation et l'impuissance. L'état émotionnel est dominé par l'anxiété, l'anticipation (ou la prémonition) de problèmes, l'impuissance et un manque d'envie de faire quoi que ce soit. Dans une situation extrême, le sujet n'est pas fiable."
       ];
 
-      var vk_interpretation = ["Épuisement, installation dans l'inaction. Surmenage chronique. Une réponse passive aux difficultés, un manque de préparation au stress et une action adéquate dans des situations stressantes sont caractéristiques. Des mesures de restauration diversifiées et volumineuses sont nécessaires.",
+      var vk_interpretation = ["Épuisement, installation dans l'inaction. Surmenage chronique. La réaction passive aux difficultés, le manque de préparation à la tension et aux actions adéquates dans les situations de stress sont caractéristiques. Des mesures de récupération variées et étendues sont nécessaires.",
 
-      "Le sujet est adapté pour optimiser sa dépense d'énergie. Besoin modéré de récupération et de repos. Le potentiel énergétique est faible, mais tout à fait suffisant pour une activité réussie dans les conditions de calme dont il a l'habitude. Dans des situations extrêmes, des délais dans l'orientation et dans la prise de décision sont probables.",
+      "Attitude visant à optimiser l'utilisation de l'énergie. Besoin modéré de récupération et de repos. Le potentiel énergétique est faible, mais tout à fait suffisant pour une activité réussie dans des conditions normales de calme. Dans une situation extrême, l'orientation et la prise de décision risquent d'être retardées.",
 
-      "Mobilisation optimale des ressources physiques et mentales, le sujet est installé dans la mise en action. Dans une situation extrême, le plus probable est une rapidité pour s'orienter et pour prendre des décisions, en rendant les actions faisables et en les réussissant.",
+      "Mobilisation optimale des ressources physiques et mentales. Le sujet a une attitude active, il agit de manière opérationnelle. Dans une situation extrême, le plus probable est qu'il fasse preuve de rapidité pour s'orienter et pour prendre des décisions, en rendant les actions faisables et en les réussissant.",
 
-      "Excitation excessive, agitation, tatillonnage. Le niveau d'excitation est excessivement élevé. Il y a des cas fréquents où le sujet fait quelque chose non pas pour son propre bien, mais uniquement pour se décharger. Dans les situations difficiles, des réactions fébriles se forment facilement : impulsivité, impatience, diminution de la maîtrise de soi, tendance à agir de manière irréfléchie, et de façon inconsidérée. Dans les situations extrêmes, le plus probable est une inefficacité de l'action, avec des réactions de panique. Des traitements relaxants et apaisants sont nécessaires."
+      "Surexcitation, agitation. Le niveau d'excitation est excessivement élevé. Il n'est pas rare que le sujet fasse quelque chose non pas pour le plaisir de le faire, mais uniquement pour se désamorcer. Dans les situations difficiles, des réactions fébriles se forment facilement : impulsivité, impatience, diminution du contrôle de soi, actions irréfléchies/inconsidérées. Dans les situations extrêmes, le manque d'efficacité des actions et les réactions de panique sont les plus probables. Diverses procédures de relaxation et d'apaisement sont nécessaires."
     ];
+
+    // English Language
+    var so_interpretation_eng = [
+        "Absence of unproductive neuropsychic tension. The subject is active, his actions are diverse, the coefficient of useful action is high. Emotional mood is optimistic. Volitional self-control is developed. The will is not an instrument of suppression of some part of the personality, it only coordinates different but not contradictory desires of the examinee. In the presence of appropriate motivation, the subject is able to work intensively for a long time. In extreme situations, he or she effectively mobilises and concentrates on the task at hand.",
+
+        "Insignificant (low) level of unproductive neuropsychic tension. The subject is predominantly inclined towards active activity. His energy resources are sufficient for more or less regular bursts of hyperactivity and tension, which are inaccessible to most other people. In conditions of motivated (interesting) activity, he does not experience difficulties with prompt and long-term memorization and reproduction of information. In general, he does not strive for thrills. He comes out of stressful situations with dignity.",
+
+        "Average level of unproductive nervous-psychic tension. The examinee copes with his/her duties within the limits of average requirements. <br> In a familiar environment he/she passes from work to rest and back, from one type of activity to another without significant difficulties. <br> In case of necessity he is able to overcome fatigue by volitional effort, but after that there is a long trail of reduced working capacity in his affairs and well-being. In order to maintain health and efficiency, the subject needs a relatively clear and subjective division of work and rest time.",
+
+        "Increased (high) level of unproductive nervous-psychic tension. The potential of the subject's expedient activity is very low. For this reason, he/she has to force himself/herself to do one or another necessary activity. <br> Constant volitional control increases fatigue. Prolonged intensive work is likely to be very costly to the subject in the neuropsychological sense. At the same time it will be very unequal in productivity and quality in different periods of time The general emotional background is characterised by increased excitability, anxiety, uncertainty. In a stressful situation, disruption of activity and behaviour is likely.",
+
+        "Expressed/severe (very high) level of unproductive nervous-psychic tension. The subject is highly fatigued. His attention is easily distracted by extraneous things, and ‘getting stuck’ on emotional experiences is characteristic. The absence of a stable hierarchy of motives makes the subject reactive and unfocused. The mood can fluctuate between exaltation and depression, excitement and helplessness in the shortest possible time. The emotional state is dominated by anxiety, anticipation of trouble, powerlessness and lack of desire to do anything. In an extreme situation, the subject is unreliable."
+      ];
+
+    var vk_interpretation_eng = [
+      "Exhaustion, attitude of inactivity. Chronic fatigue. Passive reaction to difficulties, unpreparedness for tension and adequate actions in stressful situations is characteristic. Various and extensive recovery measures are necessary.",
+
+      "The attitude to optimise the expenditure of energy. Moderate need for recovery and rest. Energy potential is low, but quite sufficient for successful activity in usual calm conditions. In an extreme situation there is likely to be a delay in orientation and decision-making.",
+
+      "Optimal mobilisation of physical and mental resources, attitude to active action. In an extreme situation, high speed of orientation and decision-making, expediency and success of actions are most likely.",
+
+      "Over-excitement, fidgeting. The level of arousal is excessively high. It is not uncommon for the subject to do something not for the sake of doing it, but only to defuse himself. In difficult situations, feverish reactions are easily formed: impulsiveness, impatience, decreased self-control, rash actions. In extreme situations, low efficiency of actions, panic reactions are most likely. Various relaxing and calming procedures are necessary."
+    ];
+
+    // German Language
+    var so_interpretation_de = [
+        "Abwesenheit von unproduktiver neuropsychischer Spannung. Die Testperson ist aktiv, ihre Handlungen sind vielfältig, der Koeffizient der nützlichen Handlungen ist hoch. Die emotionale Stimmung ist optimistisch. Die willentliche Selbstkontrolle ist entwickelt. Der Wille ist kein Instrument zur Unterdrückung eines Teils der Persönlichkeit, er koordiniert lediglich unterschiedliche, aber nicht widersprüchliche Wünsche des Probanden. Bei entsprechender Motivation ist der Proband in der Lage, über einen langen Zeitraum intensiv zu arbeiten. In Extremsituationen ist er in der Lage, sich effektiv zu mobilisieren und sich auf die anstehende Aufgabe zu konzentrieren.",
+
+        "Unbedeutendes Maß an unproduktiver neuropsychischer Spannung. Der Betreffende hat eine vorherrschende Einstellung zu aktiver Aktivität. Seine Energieressourcen reichen für mehr oder weniger regelmäßige Ausbrüche von Überaktivität und Spannung, die den meisten anderen Menschen nicht zur Verfügung stehen. Unter den Bedingungen motivierter (interessanter) Aktivität hat er/sie keine Schwierigkeiten mit dem operativen und langfristigen Einprägen und Wiedergeben von Informationen. Im Allgemeinen strebt er/sie nicht nach akuten Empfindungen. Aus stressigen Situationen geht er/sie mit Würde hervor.",
+
+        "Durchschnittliches Maß an unproduktiver nervös-psychischer Anspannung. Der Prüfling bewältigt seine Aufgaben im Rahmen der durchschnittlichen Anforderungen. In einer vertrauten Umgebung wechselt er ohne nennenswerte Schwierigkeiten von der Arbeit zur Ruhe und zurück, von einer Tätigkeit zur anderen. Im Bedarfsfall ist er in der Lage, die Ermüdung durch willentliche Anstrengung zu überwinden, aber danach bleibt eine lange „Spur“ verminderter Arbeitsfähigkeit in seinen Angelegenheiten und seinem Wohlbefinden zurück. Um seine Gesundheit und Leistungsfähigkeit zu erhalten, braucht das Subjekt eine relativ klare und subjektive Aufteilung von Arbeits- und Ruhezeiten.",
+
+        "Erhöhter Grad an unproduktiver neuropsychischer Spannung. Das Potenzial der sinnvollen Aktivität des Subjekts ist sehr gering. Aus diesem Grund muss er/sie sich zwingen, die eine oder andere notwendige Tätigkeit auszuführen. Die ständige Willenskontrolle erhöht die Ermüdung. Längeres intensives Arbeiten ist für den Probanden wahrscheinlich sehr kostspielig im neuropsychologischen Sinne. Gleichzeitig ist die Produktivität und Qualität der Arbeit in verschiedenen Zeiträumen sehr ungleich Der allgemeine emotionale Hintergrund ist durch erhöhte Erregbarkeit, Angst und Unsicherheit gekennzeichnet. In einer Stresssituation ist eine Störung der Aktivität und des Verhaltens wahrscheinlich.",
+
+        "Ausgedrückte unproduktive neuropsychische Anspannung. Der Betroffene ist stark ermüdet. Seine Aufmerksamkeit lässt sich leicht von fremden Dingen ablenken, und das „Hängenbleiben“ an emotionalen Erfahrungen ist charakteristisch. Das Fehlen einer stabilen Motivhierarchie macht den Betroffenen reaktiv und unkonzentriert. Die Stimmung kann innerhalb kürzester Zeit zwischen Hochgefühl und Depression, Erregung und Hilflosigkeit schwanken. Der emotionale Zustand wird von Angst, der Erwartung von Schwierigkeiten, Ohnmacht und Unlust, etwas zu tun, beherrscht. In einer extremen Situation ist das Subjekt unzuverlässig."
+      ];
+
+    var vk_interpretation_de = [
+      "Erschöpfung, Haltung der Untätigkeit. Chronische Müdigkeit. Kennzeichnend ist eine passive Reaktion auf Schwierigkeiten, mangelnde Vorbereitung auf Spannungen und angemessene Maßnahmen in Stresssituationen. Verschiedene und umfangreiche Erholungsmaßnahmen sind notwendig.",
+
+      "Die Einstellung, die Energie optimal zu nutzen. Mäßiges Bedürfnis nach Erholung und Ruhe. Das Energiepotenzial ist gering, aber für eine erfolgreiche Tätigkeit unter normalen, ruhigen Bedingungen völlig ausreichend. In einer Extremsituation kann es zu einer Verzögerung bei der Orientierung und Entscheidungsfindung kommen.",
+
+      "Optimale Mobilisierung der körperlichen und geistigen Ressourcen, Einstellung zum aktiven Handeln. In einer Extremsituation sind eine hohe Orientierungs- und Entscheidungsgeschwindigkeit, Zweckmäßigkeit und Erfolg des Handelns am wahrscheinlichsten.",
+
+      "Übererregung, Zappeligkeit. Der Grad der Erregung ist übermäßig hoch. Es ist nicht ungewöhnlich, dass der Betroffene etwas nicht um des Handelns willen tut, sondern nur, um sich zu entlasten. In schwierigen Situationen kommt es leicht zu fieberhaften Reaktionen: Impulsivität, Ungeduld, verminderte Selbstkontrolle, unüberlegte Handlungen. In extremen Situationen, bei geringer Effizienz der Handlungen, sind Panikreaktionen sehr wahrscheinlich. Es sind verschiedene Entspannungs- und Beruhigungsmaßnahmen erforderlich."
+    ];
+
+    // Spanish Language
+    var so_interpretation_es = [
+        "Ausencia de tensión neuropsíquica improductiva. El probando es activo, sus acciones son diversas, el coeficiente de acción útil es alto. El estado de ánimo es optimista. El autocontrol volitivo está desarrollado. La voluntad no es un instrumento de supresión de alguna parte de la personalidad, sólo coordina deseos diferentes pero no contradictorios del examinado. En presencia de una motivación adecuada, el sujeto es capaz de trabajar intensamente durante mucho tiempo. En situaciones extremas, se moviliza eficazmente y se concentra en la tarea que tiene entre manos.",
+
+        "Nivel insignificante de tensión neuropsíquica improductiva. El sujeto tiene una actitud predominantemente activa. Sus recursos energéticos son suficientes para estallidos más o menos regulares de sobreactividad y tensión, inasequibles para la mayoría de las demás personas. En condiciones de actividad motivada (interesante), no tiene dificultades de memorización operativa y a largo plazo y de reproducción de la información. En general, no busca sensaciones agudas. De las situaciones estresantes sale con dignidad.",
+
+        "Nivel medio de tensión nerviosa-psíquica improductiva. El examinado afronta sus obligaciones dentro de los límites de las exigencias medias. En un entorno familiar pasa del trabajo al descanso y viceversa, de un tipo de actividad a otra sin dificultades significativas. En caso de necesidad es capaz de superar la fatiga mediante un esfuerzo volitivo, pero después queda un largo ''rastro'' de reducción de la capacidad de trabajo en sus asuntos y su bienestar. Para mantener la salud y la eficacia, el sujeto necesita una división relativamente clara y subjetiva del tiempo de trabajo y de descanso.",
+
+        "Aumento del nivel de tensión neuropsíquica improductiva. El potencial de actividad expeditiva del sujeto es muy bajo. Por ello, tiene que forzarse a realizar una u otra actividad necesaria. El control volitivo constante aumenta la fatiga. Un trabajo intensivo prolongado puede ser muy costoso para el sujeto en el sentido neuropsicológico. Al mismo tiempo será muy desigual en productividad y calidad en diferentes periodos de tiempo El trasfondo emocional general se caracteriza por un aumento de la excitabilidad, la ansiedad, la incertidumbre. En una situación de estrés, es probable que se produzcan alteraciones de la actividad y el comportamiento.",
+
+        "Tensión neuropsíquica improductiva expresada. El sujeto está muy fatigado. Su atención se distrae fácilmente con cosas ajenas y es característico que se «atasque» en experiencias emocionales. La ausencia de una jerarquía estable de motivos hace que el sujeto sea reactivo y desenfocado. El estado de ánimo puede fluctuar entre la exaltación y la depresión, la excitación y la impotencia en el menor tiempo posible. El estado emocional está dominado por la ansiedad, la anticipación de problemas, la impotencia y la falta de ganas de hacer nada. En una situación extrema, el sujeto es poco fiable."
+      ];
+
+    var vk_interpretation_es = [
+      "Agotamiento, actitud de inactividad. Fatiga crónica. Es característica la reacción pasiva ante las dificultades, la falta de preparación para la tensión y las acciones adecuadas en situaciones de estrés. Son necesarias diversas y amplias medidas de recuperación.",
+
+      "Actitud para optimizar el uso de la energía. Necesidad moderada de recuperación y descanso. El potencial energético es bajo, pero bastante suficiente para una actividad satisfactoria en condiciones habituales de calma. En una situación extrema es probable que se produzca un retraso en la orientación y la toma de decisiones.",
+
+      "Movilización óptima de los recursos físicos y mentales, actitud ante la acción activa. En una situación extrema, lo más probable es una alta velocidad de orientación y de toma de decisiones, la rapidez y el éxito de las acciones.",
+
+      "Excitación excesiva, inquietud. El nivel de excitación es excesivamente alto. No es raro que el sujeto haga algo no por hacerlo, sino sólo para tranquilizarse. En situaciones difíciles, se forman fácilmente reacciones febriles: impulsividad, impaciencia, disminución del autocontrol, acciones precipitadas. En situaciones extremas, la baja eficacia de las acciones, las reacciones de pánico son las más probables. Son necesarios diversos procedimientos relajantes y calmantes."
+    ];
+
     //rouge (3), jaune (4), vert (2), violet (5), bleu (1), marron (6), gris (0), noir (7)
     var autnorma = [3, 4, 2, 5, 1, 6, 0, 7];
     /*
@@ -313,6 +418,8 @@
         // On CACHE (hide) :
         $("div#analyse-so").hide();
         $("div#analyse-vk").hide();
+        $("div#analyse-so-eng").hide();
+        $("div#analyse-vk-eng").hide();
         $("div#synthese").hide();
 
         $("div.choices").hide();
@@ -348,6 +455,10 @@
         // On récupère les données saisies
         var subjectName = ""
         subjectName = $("#NameSelect").children("option:selected").val();
+        
+        var language = ""
+        language = $("#LanguageSelect").children("option:selected").val();
+
         $('div#saisie').hide(); // on cache le bloc de saisie
 
         // Initialisation des variables
@@ -370,56 +481,231 @@
             if (debug===true) console.log("" + [i] + " " + so + " + ABS(Norme(" + autnorma.indexOf(i) + ")-Choix(" + tabChoices.indexOf(i) + "))")
             so += Math.abs(autnorma.indexOf(i) - tabChoices.indexOf(i));
         }
-        if (debug===true) console.log("Tension neuropsychique (Ecart total) : " + so)
+        if (debug===true) console.log("Tension neuropsychique (nerveuse/psychique) : " + so)
 
         /* Calcul du coefficient végétatif */
         vk = (18 - tabChoices.indexOf(3) - tabChoices.indexOf(4) - 2) / (18 - tabChoices.indexOf(1) - tabChoices.indexOf(2) - 2);
         vk = Math.round(vk * 10) / 10;
         if (debug===true) console.log("Coefficient d'activité végétative : " + vk)
 
-        /* Tension neuropsychique : Sélection de l'interprétation correspondant à l'écart */
+        /* Tension neuropsychique (nerveuse et psychique) : Sélection de l'interprétation correspondant à l'écart */
         if (so <= 6) {
-            so_string = so_interpretation[0];
-            so_interval = "[0 <= so <= 6]";
+          so_interval = "[0 <= so <= 6]";
+          switch(language) {
+            case "FR+EN":
+              so_string = so_interpretation[0];
+              so_string_eng = so_interpretation_eng[0];
+              break;
+            case "FR":
+              so_string = so_interpretation[0];
+              break;
+            case "EN":
+              so_string = so_interpretation_eng[0];
+              break;
+            case "DE":
+              so_string = so_interpretation_de[0];
+              break;
+            case "ES":
+              so_string = so_interpretation_es[0];
+              break;
+            default:
+              so_string = so_interpretation_eng[0];
+          }
         }
         else if (so <= 12) {
-            so_string = so_interpretation[1];
             so_interval = "[6 < so <= 12]";
+            switch(language) {
+            case "FR+EN":
+              so_string = so_interpretation[1];
+              so_string_eng = so_interpretation_eng[1];
+              break;
+            case "FR":
+              so_string = so_interpretation[1];
+              break;
+            case "EN":
+              so_string = so_interpretation_eng[1];
+              break;
+            case "DE":
+              so_string = so_interpretation_de[1];
+              break;
+            case "ES":
+              so_string = so_interpretation_es[1];
+              break;
+            default:
+              so_string = so_interpretation_eng[1];
+          }
+            
         }
         else if (so <= 20) {
-            so_string = so_interpretation[2];
             so_interval = "[12 < so <= 20]";
+            switch(language) {
+            case "FR+EN":
+              so_string = so_interpretation[2];
+              so_string_eng = so_interpretation_eng[2];
+              break;
+            case "FR":
+              so_string = so_interpretation[2];
+              break;
+            case "EN":
+              so_string = so_interpretation_eng[2];
+              break;
+            case "DE":
+              so_string = so_interpretation_de[2];
+              break;
+            case "ES":
+              so_string = so_interpretation_es[2];
+              break;
+            default:
+              so_string = so_interpretation_eng[2];
+          }
+            
         }
         else if (so <= 26) {
-            so_string = so_interpretation[3];
             so_interval = "[20 < so <= 26]";
+            switch(language) {
+            case "FR+EN":
+              so_string = so_interpretation[3];
+              so_string_eng = so_interpretation_eng[3];
+              break;
+            case "FR":
+              so_string = so_interpretation[3];
+              break;
+            case "EN":
+              so_string = so_interpretation_eng[3];
+              break;
+            case "DE":
+              so_string = so_interpretation_de[3];
+              break;
+            case "ES":
+              so_string = so_interpretation_es[3];
+              break;
+            default:
+              so_string = so_interpretation_eng[3];
+          }
+            
         }
         else if (so <= 32) {
-            so_string = so_interpretation[4];
             so_interval = "[26 < so <= 32]";
+            switch(language) {
+            case "FR+EN":
+              so_string = so_interpretation[4];
+              so_string_eng = so_interpretation_eng[4];
+              break;
+            case "FR":
+              so_string = so_interpretation[4];
+              break;
+            case "EN":
+              so_string = so_interpretation_eng[4];
+              break;
+            case "DE":
+              so_string = so_interpretation_de[4];
+              break;
+            case "ES":
+              so_string = so_interpretation_es[4];
+              break;
+            default:
+              so_string = so_interpretation_eng[4];
+          }      
         }
 
         // Sélection de l'interprétation pour le coefficient d'activité psycho-végétative
         if (vk <= 0.4) {
-            vk_string = vk_interpretation[0];
             vk_interval = "[0 <=  vk <= 0.4]";
+            switch(language) {
+            case "FR+EN":
+              vk_string = vk_interpretation[0];
+              vk_string_eng = vk_interpretation_eng[0];
+              break;
+            case "FR":
+              vk_string = vk_interpretation[0];
+              break;
+            case "EN":
+              vk_string = vk_interpretation_eng[0];
+              break;
+            case "DE":
+              vk_string = vk_interpretation_de[0];
+              break;
+            case "ES":
+              vk_string = vk_interpretation_es[0];
+              break;
+            default:
+              vk_string = vk_interpretation_eng[0];
+          }
         }
         else if (vk <= 0.8) {
-            vk_string = vk_interpretation[1];
             vk_interval = "[0.4 < vk <= 0.8]";
+            switch(language) {
+            case "FR+EN":
+              vk_string = vk_interpretation[1];
+              vk_string_eng = vk_interpretation_eng[1];
+              break;
+            case "FR":
+              vk_string = vk_interpretation[1];
+              break;
+            case "EN":
+              vk_string = vk_interpretation_eng[1];
+              break;
+            case "DE":
+              vk_string = vk_interpretation_de[1];
+              break;
+            case "ES":
+              vk_string = vk_interpretation_es[1];
+              break;
+            default:
+              vk_string = vk_interpretation_eng[1];
+          }
         }
         else if (vk <= 1.9) {
-            vk_string = vk_interpretation[2];
             vk_interval = "[0.8 < vk <= 1.9]";
+            switch(language) {
+            case "FR+EN":
+              vk_string = vk_interpretation[2];
+              vk_string_eng = vk_interpretation_eng[2];
+              break;
+            case "FR":
+              vk_string = vk_interpretation[2];
+              break;
+            case "EN":
+              vk_string = vk_interpretation_eng[2];
+              break;
+            case "DE":
+              vk_string = vk_interpretation_de[2];
+              break;
+            case "ES":
+              vk_string = vk_interpretation_es[2];
+              break;
+            default:
+              vk_string = vk_interpretation_eng[2];
+          }
         }
         else if (vk <= 5) {
-            vk_string = vk_interpretation[3];
             vk_interval = "[1.9 < vk <= 5]";
+            switch(language) {
+            case "FR+EN":
+              vk_string = vk_interpretation[3];
+              vk_string_eng = vk_interpretation_eng[3];
+              break;
+            case "FR":
+              vk_string = vk_interpretation[3];
+              break;
+            case "EN":
+              vk_string = vk_interpretation_eng[3];
+              break;
+            case "DE":
+              vk_string = vk_interpretation_de[3];
+              break;
+            case "ES":
+              vk_string = vk_interpretation_es[3];
+              break;
+            default:
+              vk_string = vk_interpretation_eng[3];
+          }
         }
 
         /* BLOC DE SYNTHESE */
         $("div#name").append("<p class=\"choices\">Nom : " + subjectName + "</p>");
         $("div#date").append("<p class=\"choices\">Date : " + datetime + "</p>");
+        $("div#date").append("<p class=\"choices\">Langue : " + language + "</p>");
         $("input#colors").attr('value',"" + tabColors.join(""));
         $("input#idcolors").attr('value',"" + tabChoices.join(""));
         $("div#synthese").show();
@@ -429,15 +715,54 @@
         $("input#idcolors2").attr('value',"" + tabChoices.join("-"));
         $("#colors2").show();
 
+        var so_legend;
+        switch(language) {
+            case "FR+EN":
+              so_legend = "correspondant à l'écart";
+              break;
+            case "FR":
+              so_legend = "correspondant à l'écart";
+              break;
+            case "EN":
+              so_legend = "corresponding to the range";
+              break;
+            case "DE":
+              so_legend = "entsprechend der Lücke";
+              break;
+            case "ES":
+              so_legend = "correspondiente al hueco";
+              break;
+            default:
+              so_legend = "corresponding to the range";
+          }
+
+
         /* BLOC ANALYSE SO */
-        $("div#analyse-so").append("<p class=\"choices\">SО = " + so + "<span style=\"font-weight:lighter;\">    avec " + so_interval + "</span></p>");
+        $("div#analyse-so").append("<p class=\"choices\">SO = " + so + "<span style=\"font-weight:lighter;\">    " + so_legend + " " + so_interval + "</span></p>");
         $("div#analyse-so").append("<p class=\"choices description\">   " + so_string + "</p>");
         $("div#analyse-so").show();
 
         /* BLOC ANALYSE VK */
-        $("div#analyse-vk").append("<p class=\"choices\">CК = " + vk + "<span style=\"font-weight:lighter;\">    avec " + vk_interval +"</span></p>");
+        $("div#analyse-vk").append("<p class=\"choices\">CK = " + vk + "<span style=\"font-weight:lighter;\">    " + so_legend + " " + vk_interval +"</span></p>");
         $("div#analyse-vk").append("<p class=\"choices description\">   " + vk_string + "</p>");
         $("div#analyse-vk").show();
+
+        /* ENGLISH */
+        if(language=="FR+EN"){
+
+        so_legend = "corresponding to the range";
+        
+        /* BLOC ANALYSE SO ENGLISH */
+        $("div#analyse-so-eng").append("<p class=\"choices\">SO = " + so + "<span style=\"font-weight:lighter;\">    " + so_legend + " " + so_interval + "</span></p>");
+        $("div#analyse-so-eng").append("<p class=\"choices description\">   " + so_string_eng + "</p>");
+        $("div#analyse-so-eng").show();
+
+        /* BLOC ANALYSE VK ENGLISH */
+        $("div#analyse-vk-eng").append("<p class=\"choices\">CK = " + vk + "<span style=\"font-weight:lighter;\">    " + so_legend + " " + vk_interval +"</span></p>");
+        $("div#analyse-vk-eng").append("<p class=\"choices description\">   " + vk_string_eng + "</p>");
+        $("div#analyse-vk-eng").show();
+        
+        }
 
         // On affiche les résultats restants
         // TODO : est-ce nécessaire ???
