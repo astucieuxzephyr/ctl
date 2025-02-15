@@ -14,7 +14,7 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!--
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 -->
@@ -44,7 +44,8 @@
        </div>
        <div class="form-group row">
         <label for="NameSelect" class="col-sm-4">2) Indiquez votre prénom / Choose your surname :</label>
-        <select id="NameSelect" class="form-control col-sm-7">
+        <input type="text" id="NameField" name="name" required minlength="4" maxlength="30" size="10"  class="form-control col-sm-4" />
+        <select id="NameSelect" class="form-control col-sm-4">
           <option value="Anonyme" selected>Choisissez ici/choose here</option>
           <option value="TBH">Tanguy</option>
           <option value="AT">Anne</option>
@@ -61,19 +62,23 @@
   <div id="synthese" class="col-sm-6">
     <div class="card choices">
       <div class="card-body">
-        <h5 class="card-title">Synthèse des résultats - Summary of results :</h5>
+        <h5 class="card-title" id="titre_resultats">Synthèse des résultats - Summary of results :</h5>
         <!-- <p class="card-text">With supportional content.</p> -->
         <div class="row">
-          <div id="name" class="col-sm-6"></div>
-          <div id="date" class="col-sm-6"></div>
+          <div id="name" class="col-sm-4"></div>
+          <div id="date" class="col-sm-4"></div>
+          <div id="langue" class="col-sm-4"></div>
         </div>
         <form>
           <div class="form-group row">
-            <div class="col-sm-6">
-              <input id="colors" type="text" readonly class="form-control-plaintext form-control-sm" size="8" value="">
+            <div class="col-sm-4">
+              <label for="colors">Choix de couleurs :</label>
             </div>
-            <div class="col-sm-6">
-              <input id="idcolors" type="text" readonly class="form-control-plaintext form-control-sm" size="8" value="">
+            <div class="col-sm-4">
+              <input id="colors" type="text" readonly class="form-control-plaintext form-control-sm" size="4" value="">
+            </div>
+            <div class="col-sm-4">
+              <input id="idcolors" type="text" readonly class="form-control-plaintext form-control-sm" size="4" value="">
             </div>
           </div>
         </form>
@@ -85,7 +90,7 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Choix de couleurs / Color's choice :</h5>
+        <h5 class="card-title">Choix de couleurs / Colors choice :</h5>
           <div class="form-group row">
             <div class="col-sm-6">
               <!-- <label for="colors" class="col-sm-12 col-form-label">Choix de couleurs :</label>-->
@@ -114,12 +119,12 @@
 
 </div><!-- end row 1 -->
 
-<div class="row"><!-- begin row 2 -->
+<div class="row" id="row2"><!-- begin row 2 -->
 <!-- ROW 2 : LEFT CARD -->
 <div class="col-sm-6">
   <div class="card choices">
     <div id="analyse-so" class="card-body">
-      <h5 class="card-title">Tension nerveuse/psychique (neuropsychic tension) :</h5>
+      <h5 class="card-title">TITRE</h5>
       <!-- <p class="card-text">With supporting text.</p> -->
     </div>
   </div>
@@ -128,19 +133,19 @@
 <div class="col-sm-6">
   <div class="card choices">
     <div id="analyse-vk" class="card-body">
-      <h5 class="card-title">Coefficient d'activité psycho-végétative (Psycho-vegetative activity coefficient) :</h5>
+      <h5 class="card-title">TITRE</h5>
       <!-- <p class="card-text">With supporting text.</p> -->
     </div>
   </div>
 </div>
 </div><!-- end row 2 -->
 
-<div class="row"><!-- begin row 3 -->
+<div class="row" id="row3"><!-- begin row 3 -->
   <!-- ROW 3 : LEFT CARD -->
   <div class="col-sm-6">
     <div class="card choices">
       <div id="analyse-so-eng" class="card-body">
-        <h5 class="card-title">Neuropsychic tension :</h5>
+        <h5 class="card-title">TITRE</h5>
         <!-- <p class="card-text">With supporting text.</p> -->
       </div>
     </div>
@@ -149,7 +154,7 @@
   <div class="col-sm-6">
     <div class="card choices">
       <div id="analyse-vk-eng" class="card-body">
-        <h5 class="card-title">Psycho-vegetative activity coefficient :</h5>
+        <h5 class="card-title">TITRE</h5>
         <!-- <p class="card-text">With supporting text.</p> -->
       </div>
     </div>
@@ -418,8 +423,11 @@
         // On CACHE (hide) :
         $("div#analyse-so").hide();
         $("div#analyse-vk").hide();
+
         $("div#analyse-so-eng").hide();
         $("div#analyse-vk-eng").hide();
+        $("#row3").hide();
+        
         $("div#synthese").hide();
 
         $("div.choices").hide();
@@ -454,7 +462,10 @@
 
         // On récupère les données saisies
         var subjectName = ""
-        subjectName = $("#NameSelect").children("option:selected").val();
+        subjectName = $("#NameField").val();
+        if(subjectName==""){
+          subjectName = $("#NameSelect").children("option:selected").val();
+        }
         
         var language = ""
         language = $("#LanguageSelect").children("option:selected").val();
@@ -490,7 +501,7 @@
 
         /* Tension neuropsychique (nerveuse et psychique) : Sélection de l'interprétation correspondant à l'écart */
         if (so <= 6) {
-          so_interval = "[0 <= so <= 6]";
+          so_interval = "[0 <= so <= 6] (max=32)";
           switch(language) {
             case "FR+EN":
               so_string = so_interpretation[0];
@@ -513,7 +524,7 @@
           }
         }
         else if (so <= 12) {
-            so_interval = "[6 < so <= 12]";
+            so_interval = "[6 < so <= 12] (max=32)";
             switch(language) {
             case "FR+EN":
               so_string = so_interpretation[1];
@@ -537,7 +548,7 @@
             
         }
         else if (so <= 20) {
-            so_interval = "[12 < so <= 20]";
+            so_interval = "[12 < so <= 20] (max=32)";
             switch(language) {
             case "FR+EN":
               so_string = so_interpretation[2];
@@ -561,7 +572,7 @@
             
         }
         else if (so <= 26) {
-            so_interval = "[20 < so <= 26]";
+            so_interval = "[20 < so <= 26] (max=32)";
             switch(language) {
             case "FR+EN":
               so_string = so_interpretation[3];
@@ -585,7 +596,7 @@
             
         }
         else if (so <= 32) {
-            so_interval = "[26 < so <= 32]";
+            so_interval = "[26 < so <= 32] (max=32)";
             switch(language) {
             case "FR+EN":
               so_string = so_interpretation[4];
@@ -702,10 +713,78 @@
           }
         }
 
+
+
+        var so_legend;
+        var titre_resultats;
+
+        switch(language) {
+            case "FR+EN":
+            label_nom="Nom";
+            label_date="Date";
+            label_langue="Langue";
+            label_choix="Choix de couleurs";
+            titre_resultats = "Synthèse des résultats - Summary of results :";
+            so_title = "Tension nerveuse/psychique :";
+            so_interval_legend = "correspondant à l'écart";
+            vk_title = "Coefficient d'activité psycho-végétative :";
+              break;
+            case "FR":
+            label_nom="Nom";
+            label_date="Date";
+            label_langue="Langue";
+            label_choix="Choix de couleurs";
+            titre_resultats = "Synthèse des résultats :";
+            so_title = "Tension nerveuse/psychique :";
+            so_interval_legend = "correspondant à l'écart";
+            vk_title = "Coefficient d'activité psycho-végétative :";
+              break;
+            case "EN":
+            label_nom="Name";
+            label_date="Date";
+            label_langue="Language";
+            label_choix="Choice of colours";
+            titre_resultats = "Summary of results :";
+            so_title = "Neuropsychic tension:";
+            so_interval_legend = "corresponding to the range";
+            vk_title = "Psycho-vegetative activity coefficient:";
+              break;
+            case "DE":
+            label_nom="Name";
+            label_date="Datum";
+            label_langue="Sprache";
+            label_choix="Auswahl an Farben";
+            titre_resultats = "Zusammenfassung der Ergebnisse :";
+            so_title = "Neuropsychische Anspannung :";
+            so_interval_legend = "entsprechend der Lücke";
+            vk_title = "Koeffizient der psycho-vegetativen Aktivität :";
+              break;
+            case "ES":
+            label_nom="Nombre completo";
+            label_date="Fecha";
+            label_langue="Lingua";
+            label_choix="Elección de colores";
+            titre_resultats="Resumen de los resultados";
+            so_title = "Tensión neuropsicológica :";
+            so_interval_legend = "correspondiente al hueco";
+            vk_title = "Coeficiente de actividad psicovegetativa :";
+              break;
+            default:
+            label_nom="Nom";
+            label_date="Date";
+            label_langue="Langue";
+            label_choix="Choix de couleurs";
+            titre_resultats = "Summary of results :";
+            so_title = "Neuropsychic tension :";
+            so_interval_legend = "corresponding to the range";
+            vk_title = "Psycho-vegetative activity coefficient :";
+          }
+
         /* BLOC DE SYNTHESE */
-        $("div#name").append("<p class=\"choices\">Nom : " + subjectName + "</p>");
-        $("div#date").append("<p class=\"choices\">Date : " + datetime + "</p>");
-        $("div#date").append("<p class=\"choices\">Langue : " + language + "</p>");
+        $("div#name").append("<p class=\"choices\">" + label_nom + " : " + subjectName + "</p>");
+        $("div#date").append("<p class=\"choices\">" + label_date + " : " + datetime + "</p>");
+        $("div#langue").append("<p class=\"choices\">" + label_langue + " : " + language + "</p>");
+        $("label[for='colors']").html(label_choix + " :");
         $("input#colors").attr('value',"" + tabColors.join(""));
         $("input#idcolors").attr('value',"" + tabChoices.join(""));
         $("div#synthese").show();
@@ -714,53 +793,41 @@
         $("input#colors2").attr('value',"" + tabColors.join(""));
         $("input#idcolors2").attr('value',"" + tabChoices.join("-"));
         $("#colors2").show();
-
-        var so_legend;
-        switch(language) {
-            case "FR+EN":
-              so_legend = "correspondant à l'écart";
-              break;
-            case "FR":
-              so_legend = "correspondant à l'écart";
-              break;
-            case "EN":
-              so_legend = "corresponding to the range";
-              break;
-            case "DE":
-              so_legend = "entsprechend der Lücke";
-              break;
-            case "ES":
-              so_legend = "correspondiente al hueco";
-              break;
-            default:
-              so_legend = "corresponding to the range";
-          }
-
+        
+        $("h5#titre_resultats").replaceWith("<h5 class=\"card-title\" id=\"titre_resultats\">" + titre_resultats + "</h5>");
 
         /* BLOC ANALYSE SO */
-        $("div#analyse-so").append("<p class=\"choices\">SO = " + so + "<span style=\"font-weight:lighter;\">    " + so_legend + " " + so_interval + "</span></p>");
+        $("div#analyse-so h5").replaceWith("<h5 class=\"card-title\">" + so_title + "</h5>");
+        $("div#analyse-so").append("<p class=\"choices\">SO = " + so + "<span style=\"font-weight:lighter;\">    " + so_interval_legend + " " + so_interval + "</span></p>");
         $("div#analyse-so").append("<p class=\"choices description\">   " + so_string + "</p>");
         $("div#analyse-so").show();
 
         /* BLOC ANALYSE VK */
-        $("div#analyse-vk").append("<p class=\"choices\">CK = " + vk + "<span style=\"font-weight:lighter;\">    " + so_legend + " " + vk_interval +"</span></p>");
+        $("div#analyse-vk h5").replaceWith("<h5 class=\"card-title\">" + vk_title + "</h5>");
+        $("div#analyse-vk").append("<p class=\"choices\">VK = " + vk + "<span style=\"font-weight:lighter;\">    " + so_interval_legend + " " + vk_interval +"</span></p>");
         $("div#analyse-vk").append("<p class=\"choices description\">   " + vk_string + "</p>");
         $("div#analyse-vk").show();
 
         /* ENGLISH */
         if(language=="FR+EN"){
 
-        so_legend = "corresponding to the range";
+          so_title = "Neuropsychic tension:";
+          so_interval_legend = "corresponding to the range";
+          vk_title = "Psycho-vegetative activity coefficient:";
         
         /* BLOC ANALYSE SO ENGLISH */
-        $("div#analyse-so-eng").append("<p class=\"choices\">SO = " + so + "<span style=\"font-weight:lighter;\">    " + so_legend + " " + so_interval + "</span></p>");
+        $("div#analyse-so-eng h5").replaceWith("<h5 class=\"card-title\">" + so_title + "</h5>");
+        $("div#analyse-so-eng").append("<p class=\"choices\">SO = " + so + "<span style=\"font-weight:lighter;\">    " + so_interval_legend + " " + so_interval + "</span></p>");
         $("div#analyse-so-eng").append("<p class=\"choices description\">   " + so_string_eng + "</p>");
         $("div#analyse-so-eng").show();
 
         /* BLOC ANALYSE VK ENGLISH */
-        $("div#analyse-vk-eng").append("<p class=\"choices\">CK = " + vk + "<span style=\"font-weight:lighter;\">    " + so_legend + " " + vk_interval +"</span></p>");
+        $("div#analyse-vk-eng h5").replaceWith("<h5 class=\"card-title\">" + vk_title + "</h5>");
+        $("div#analyse-vk-eng").append("<p class=\"choices\">CK = " + vk + "<span style=\"font-weight:lighter;\">    " + so_interval_legend + " " + vk_interval +"</span></p>");
         $("div#analyse-vk-eng").append("<p class=\"choices description\">   " + vk_string_eng + "</p>");
         $("div#analyse-vk-eng").show();
+
+        $("div#row3").show();
         
         }
 
