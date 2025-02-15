@@ -8,7 +8,7 @@
 ## Changelog
  - Get original CTL program (done by Daria Titova, in russian language) on Github : in avril 23, 2013
  - New version of the program, in french, by Tanguy Bodin-Hullin, in march 2020.
- - Last update : april 2020.
+ - Last update : february 2025 : New multilingual version
 
 ## History of this program :
  - The first recovery of the Russian program was made in April 2013 on Github. A first translation has been made, and the JS program has been improved, but I lost the file by mistake some time later.
