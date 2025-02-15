@@ -21,9 +21,11 @@
    - Texts translated into french
    - Better documented code, added some debugging messages in the console that can be turned ON/OFF
    - Improved documentation in Markdown format, in french and english.
+### 2025 : New multiligual version of the program
+   - Multilingual version : French (Français), English, German (Deutsch), Spanish (Español)
+   - Improved french translation to make it more understandable and effective.
 
 ## Still To-do :
-  - Add the ability to get the results in other languages, especially in english.
   - Add a random color positioning system
   
 ## Description :
