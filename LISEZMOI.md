@@ -1,10 +1,11 @@
-# Version française du test des couleurs de Max Lüscher :
+# Version multilingue de la version simplifiée du test des couleurs de Max Lüscher :
 
  - Auteur : Tanguy Bodin-Hullin.
 
 ## Changelog
- - Récupération sur Github du programme russe CTL (clinical test) fait par Daria Titova : 23 avril 2013
- - Nouvelle version du programme, en français, par Tanguy Bodin-Hullin, en mars 2020
+ - 23 Avril 2013 : Récupération sur Github du programme russe CTL (clinical test) fait par Daria Titova
+ - Mars 2020 : Nouvelle version du programme, en français, par Tanguy Bodin-Hullin
+ - 15 Février 2025 : Nouvelle version du programme multilingue, avec des traductions améliorées pour le français.
 
 ## Historique de ce programme :
  - Le programme russe a été récupéré en avril 2013 sur Github
@@ -20,17 +21,19 @@
  - Code mieux documenté, avec la possibilité d'afficher les messages de debug dans la console.
  - Textes soigneusement traduits en français
  - Amélioration de la documentation au format Markdown.
+### 2025 : Nouvelle interface multilingue
+  - Nouvelle interface multilingue avec la possibilité de choisir sa langue parmi français, anglais, allemand, espagnol.
+  - Amélioration de la traduction en français
 
 ## To-Do :
-   - Ajouter la possibilité d'obtenir les résultats dans d'autres langues, notamment en anglais.
    - Ajouter un système de randomisation de la position des cartes de couleur.
 
 ## Description :
 - Il s'agit du test des couleurs du psychologue Max Lüscher (1923-2017), en version ultra-simplifiée.
-- Le test des couleurs permet d'évaluer l'état émotionnel d'une personne à un moment donné, en fonction de sa préférence de couleurs sur le moment.
-- Ce test est peu connu mais est d'un bon intérêt clinique, il est pertinent et assez "puissant".
-- C'est un test qui s'appuie sur la relation entre la perception des longueurs d'onde des couleurs, et les émotions. Il est très scientifique.
-- Ce n'est pas pour rien qu'existent dans la langue française des expressions comme : "Voir le monde en gris". Ou encore : "Voir la vie en couleurs"...il y a un lien entre la perception des couleurs et la vie intérieure psychologique du sujet.
+- Le test des couleurs permet d'évaluer l'état émotionnel et nerveux d'une personne à un moment donné, en fonction de sa préférence de couleurs sur le moment.
+- Ce test est peu connu mais est d'un bon intérêt clinique, il est pertinent et efficace.
+- Au plan scientifique, il s'appuie sur la relation entre la perception des longueurs d'onde des couleurs, et les émotions.
+- Remarque : Ce n'est pas pour rien qu'existent dans la langue française des expressions comme : "Voir le monde en gris". Ou encore : "Voir la vie en couleurs"...il y a un lien entre la perception des couleurs et la vie intérieure psychologique du sujet.
 
 # Usage :
 Le test a déjà été utilisé à de maintes reprises à travers le monde.
